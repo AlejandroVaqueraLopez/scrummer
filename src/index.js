@@ -8,10 +8,17 @@ const io = new WebSocketServer(server); //creating the socket.io server with the
 
 app.use(express.static(__dirname + '/public'));
 
-io.on('connection',() =>{
-	console.log('a new connection heard');
+io.on('connection',(socket) =>{
+	console.log('a new connection heard',socket.id);
+	socket.emit('ping');
+
+	socket.on('pong', () => {
+		console.log('pong');
+	})
+
 
 });
+
 
 
 server.listen(3000);
