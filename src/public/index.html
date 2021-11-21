@@ -2,11 +2,48 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
 	<title>scrummer</title>
-	<link rel="stylesheet" href="./main.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@500&family=Ubuntu+Condensed&family=Zen+Kaku+Gothic+New:wght@300;500;900&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
-	<h1>tu estilo </h1>
+
+	<header class="header">
+		<div class="header-box__logo">
+			<img class="headerLogo" src="./icons/logo_white_large.png" alt="menuIcon">
+		</div>
+		<div class="header-box__menuIcon">
+			<img class="menuIcon" src="./icons/menu.png" alt="menuIcon">
+		</div>
+	</header>
+
+	<section class="home-1">
+
+
+			<div class="home-1__paragraph">
+				<h1 class="title">Join the framework</h1>
+				<p class="paragraph-2">
+					In SCRUMMER you and your team will be able to use all the scrum framework tools, creating, managing,reducing time and increasing effectiveness of your proyects just transforming big processes into easy tasks. 
+				</p>
+				<input class="btnSuccess" type="button" value="Create now!">
+			</div>
+
+			<div class="home-1__homeImage">
+				<img class="homeImage" src="./images/welcome.jpg" alt="welcome-image">
+			</div>
+
+
+	</section>
+
+
+	<button class="btnSuccess">success</button>
+	<button class="btnDelete">Delete</button>
+
 	<script src="/socket.io/socket.io.min.js"></script><!--this is to read the presetted js file of socket.io moduleand use all the functionalities inside-->
 	<script src="./main.js"></script>
 </body>

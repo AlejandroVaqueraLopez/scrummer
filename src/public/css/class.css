@@ -1,0 +1,47 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
+
+.btnSuccess {
+  font-family: "Roboto", sans-serif;
+  height: auto;
+  width: auto;
+  padding: 8px 15px;
+  color: #fff;
+  font-size: 18px;
+  background: #0099C0;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+}
+.btnSuccess:active {
+  transform: scale(0.92);
+}
+
+.btnDelete {
+  height: auto;
+  width: auto;
+  font-family: "Roboto", sans-serif;
+  padding: 8px 15px;
+  background: #FF4444;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+}
+.btnDelete:active {
+  transform: scale(0.92);
+}
+
+.title {
+  outline: solid yellow;
+}
+
+.paragraph-2 {
+  font-size: 18px;
+  outline: solid green;
+}
+
+/*# sourceMappingURL=class.css.map */

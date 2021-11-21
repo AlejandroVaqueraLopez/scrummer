@@ -1,0 +1,46 @@
+@import "variables";
+body{
+	font-family: 'Roboto', sans-serif;
+	margin:0px;
+}
+//buttons
+.btnSuccess{
+	font-family: 'Roboto', sans-serif;
+	height:auto;
+	width:auto;
+	padding:8px 15px;
+	color:#fff;
+	font-size:18px;
+	background:$btnSuccess;
+	border-radius: 30px;
+	outline:none;
+	border:none;
+	&:active{
+		transform:scale(0.92);
+	}
+}
+
+.btnDelete{
+	height:auto;
+	width:auto;
+	font-family: 'Roboto', sans-serif;
+	padding:8px 15px;
+	background:$btnDelete;
+	font-size:18px;
+	color:#fff;
+	border-radius: 30px;
+	outline:none;
+	border:none;
+	&:active{
+		transform:scale(0.92);
+	}
+}
+
+//titles & subtitles
+.title{
+	outline:solid yellow;
+}
+.paragraph-2{
+	font-size:18px;
+	outline:solid green;
+}
