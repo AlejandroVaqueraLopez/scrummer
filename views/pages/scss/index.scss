@@ -1,0 +1,165 @@
+@import "class";
+@import "variables";
+@import "functions";
+//home-1 section
+.home-1{
+	@include flex(initial,center,flex-start);
+	height:auto;
+	width:100%;
+	background:$purpleBack;
+	padding-top:80px;
+	padding-bottom:30px;
+	
+	.home-1__container{
+		@include flex(initial,center,center);
+		flex-wrap:wrap;
+//		outline:solid green;
+		width:95%;
+		height:auto;
+
+		.home-1__paragraph{
+			@include flex(column,center,center);
+			height:auto;
+			width:35%;
+			min-height:250px;
+			min-width:300px;
+			max-height:500px;
+			max-width:550px;
+			margin: 25px 15px;
+			//outline:solid green;
+			color:#fff;
+			box-sizing:border-box;
+
+			h1{
+				margin:15px 0px;
+				text-align:center;
+			}
+
+			p{
+				text-align:center;
+			}
+
+			input{
+				margin:15px 0px;
+			}
+		}
+
+		.home-1__homeImage{
+			height:auto;
+			width:40%;
+			min-height:300px;
+			min-width:350px;
+			max-height:500px;
+			max-width:550px;
+			box-sizing:border-box;
+//			outline:solid green;
+
+			.homeImage{
+				height:100%;
+				width:100%;
+			}
+
+		}
+	}
+}
+
+.home-2{
+	@include flex(initial,center,center);
+	height:auto;
+	width:100%;
+	background:$blackBack;
+	color:#fff;
+
+	.home-2__container{
+		height:auto;
+		width:90%;
+		margin:100px 0px;
+		outline:solid green;
+
+		h2{
+			width:100%;
+			height:auto;
+			margin:15px 0px;
+			text-align:center;
+		}
+
+
+		.home-2__subContainer{
+			@include flex(initial,center,center);
+			flex-wrap:wrap;
+			outline:solid yellow;
+			height:auto;
+			width:100%;
+
+			.mobileImage{
+				height:350px;
+				width:350px;
+				box-sizing:border-box;
+				margin:15px;
+				box-sizing:border-box;
+				border-radius:30px;
+
+				.mobileImage-img{
+					height:100%;
+					width:100%;
+					border-radius:30px;
+				}
+
+			}
+
+			.stepsContainer{
+				@include flex(initial,center,center);
+				margin:0px;
+				flex-wrap:wrap;
+				height:350px;
+				width:350px;
+				outline:solid red;
+				
+				.stepItem{
+					@include flex(initial,center,center);
+					outline:solid pink;
+					height:160px;
+					box-sizing:initial;
+					width:160px;
+					border-radius:30px;
+
+					&:first-child{
+						background:$blueBack;
+					}
+
+					&:nth-child(2){
+						background:$purplePlattform;
+					}
+
+					&:nth-child(3){
+						background:$purplePlattform;
+					}
+
+					&:last-child{
+						background:$blueBack;
+					}
+					
+					.stepItem-container{
+						@include flex(column,center,center);
+						height:auto;
+						width:auto;
+						outline:solid white;
+					}
+
+					.stepIcon{
+						outline:solid pink;
+						height:70px;
+						width:70px;
+						margin-bottom:5px;
+						
+
+					}
+				}
+
+			}
+
+		}
+
+	}
+	
+}

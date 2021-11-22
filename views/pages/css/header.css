@@ -1,0 +1,80 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btnSuccess {
+  font-family: "Roboto", sans-serif;
+  height: auto;
+  width: auto;
+  padding: 8px 15px;
+  color: #fff;
+  font-size: 18px;
+  background: #0099C0;
+  border-radius: 30px;
+  border: none;
+}
+.btnSuccess:active {
+  transform: scale(0.92);
+}
+
+.btnDelete {
+  height: auto;
+  width: auto;
+  font-family: "Roboto", sans-serif;
+  padding: 8px 15px;
+  background: #FF4444;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+}
+.btnDelete:active {
+  transform: scale(0.92);
+}
+
+.btnIcon:active {
+  transform: scale(0.92);
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+}
+
+.paragraph-2 {
+  font-size: 18px;
+}
+
+.header {
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background: #3C065E;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0px;
+}
+.header .header-box__logo {
+  height: 28px;
+  width: auto;
+}
+.header .header-box__logo .headerLogo {
+  height: 100%;
+  width: auto;
+}
+.header .header-box__menuIcon {
+  height: 60px;
+  width: 60px;
+}
+.header .header-box__menuIcon .menuIcon {
+  height: 100%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=header.css.map */

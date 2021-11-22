@@ -1,0 +1,204 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btnSuccess {
+  font-family: "Roboto", sans-serif;
+  height: auto;
+  width: auto;
+  padding: 8px 15px;
+  color: #fff;
+  font-size: 18px;
+  background: #0099C0;
+  border-radius: 30px;
+  border: none;
+}
+.btnSuccess:active {
+  transform: scale(0.92);
+}
+
+.btnDelete {
+  height: auto;
+  width: auto;
+  font-family: "Roboto", sans-serif;
+  padding: 8px 15px;
+  background: #FF4444;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+}
+.btnDelete:active {
+  transform: scale(0.92);
+}
+
+.btnIcon:active {
+  transform: scale(0.92);
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+}
+
+.paragraph-2 {
+  font-size: 18px;
+}
+
+.home-1 {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  width: 100%;
+  background: #3C065E;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+.home-1 .home-1__container {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95%;
+  height: auto;
+}
+.home-1 .home-1__container .home-1__paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 35%;
+  min-height: 250px;
+  min-width: 300px;
+  max-height: 500px;
+  max-width: 550px;
+  margin: 25px 15px;
+  color: #fff;
+  box-sizing: border-box;
+}
+.home-1 .home-1__container .home-1__paragraph h1 {
+  margin: 15px 0px;
+  text-align: center;
+}
+.home-1 .home-1__container .home-1__paragraph p {
+  text-align: center;
+}
+.home-1 .home-1__container .home-1__paragraph input {
+  margin: 15px 0px;
+}
+.home-1 .home-1__container .home-1__homeImage {
+  height: auto;
+  width: 40%;
+  min-height: 300px;
+  min-width: 350px;
+  max-height: 500px;
+  max-width: 550px;
+  box-sizing: border-box;
+}
+.home-1 .home-1__container .home-1__homeImage .homeImage {
+  height: 100%;
+  width: 100%;
+}
+
+.home-2 {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  background: #181A1B;
+  color: #fff;
+}
+.home-2 .home-2__container {
+  height: auto;
+  width: 90%;
+  margin: 100px 0px;
+  outline: solid green;
+}
+.home-2 .home-2__container h2 {
+  width: 100%;
+  height: auto;
+  margin: 15px 0px;
+  text-align: center;
+}
+.home-2 .home-2__container .home-2__subContainer {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  outline: solid yellow;
+  height: auto;
+  width: 100%;
+}
+.home-2 .home-2__container .home-2__subContainer .mobileImage {
+  height: 350px;
+  width: 350px;
+  box-sizing: border-box;
+  margin: 15px;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+.home-2 .home-2__container .home-2__subContainer .mobileImage .mobileImage-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+}
+.home-2 .home-2__container .home-2__subContainer .stepsContainer {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  flex-wrap: wrap;
+  height: 350px;
+  width: 350px;
+  outline: solid red;
+}
+.home-2 .home-2__container .home-2__subContainer .stepsContainer .stepItem {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  outline: solid pink;
+  height: 160px;
+  box-sizing: initial;
+  width: 160px;
+  border-radius: 30px;
+}
+.home-2 .home-2__container .home-2__subContainer .stepsContainer .stepItem:first-child {
+  background: #0099C0;
+}
+.home-2 .home-2__container .home-2__subContainer .stepsContainer .stepItem:nth-child(2) {
+  background: #673C9E;
+}
+.home-2 .home-2__container .home-2__subContainer .stepsContainer .stepItem:nth-child(3) {
+  background: #673C9E;
+}
+.home-2 .home-2__container .home-2__subContainer .stepsContainer .stepItem:last-child {
+  background: #0099C0;
+}
+.home-2 .home-2__container .home-2__subContainer .stepsContainer .stepItem .stepItem-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  outline: solid white;
+}
+.home-2 .home-2__container .home-2__subContainer .stepsContainer .stepItem .stepIcon {
+  outline: solid pink;
+  height: 70px;
+  width: 70px;
+  margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=index.css.map */
