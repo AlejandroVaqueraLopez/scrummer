@@ -48,7 +48,7 @@
 			height:auto;
 			width:40%;
 			min-height:300px;
-			min-width:350px;
+			min-width:340px;
 			max-height:500px;
 			max-width:550px;
 			box-sizing:border-box;
@@ -74,7 +74,7 @@
 		height:auto;
 		width:90%;
 		margin:100px 0px;
-		outline:solid green;
+		//outline:solid green;
 
 		h2{
 			width:100%;
@@ -87,73 +87,84 @@
 		.home-2__subContainer{
 			@include flex(initial,center,center);
 			flex-wrap:wrap;
-			outline:solid yellow;
+			//outline:solid yellow;
 			height:auto;
 			width:100%;
 
 			.mobileImage{
-				height:350px;
-				width:350px;
+				height:330px;
+				width:330px;
+				min-width:330px;
 				box-sizing:border-box;
-				margin:15px;
+				margin:10px;
 				box-sizing:border-box;
-				border-radius:30px;
+				border-radius:20px;
 
 				.mobileImage-img{
 					height:100%;
 					width:100%;
-					border-radius:30px;
+					border-radius:20px;
 				}
 
 			}
 
 			.stepsContainer{
-				@include flex(initial,center,center);
-				margin:0px;
-				flex-wrap:wrap;
+				@include flex(column,center,center);
 				height:350px;
 				width:350px;
-				outline:solid red;
+				//outline:solid red;
 				
+				.stepItem-stGroup{
+					@include flex(initial,center,center);
+					//outline:solid green;
+					height:auto;
+					width:auto;
+
+					& .stepItem:nth-child(1){
+						background:$blueBack;
+					}
+					& .stepItem:nth-child(2){
+						background:$purplePlattform;
+					}
+
+				}
+
+				.stepItem-ndGroup{
+					@include flex(initial,center,center);
+					//outline:solid green;
+					height:auto;
+					width:auto;
+
+					& .stepItem:nth-child(1){
+						background:$purplePlattform;
+					}
+					& .stepItem:nth-child(2){
+						background:$blueBack;
+					}
+				}
+
 				.stepItem{
 					@include flex(initial,center,center);
-					outline:solid pink;
-					height:160px;
-					box-sizing:initial;
-					width:160px;
-					border-radius:30px;
+					//outline:solid red;
+					height:155px;
+					width:155px;
+					margin:10px;
+					border-radius:20px;
 
-					&:first-child{
-						background:$blueBack;
-					}
-
-					&:nth-child(2){
-						background:$purplePlattform;
-					}
-
-					&:nth-child(3){
-						background:$purplePlattform;
-					}
-
-					&:last-child{
-						background:$blueBack;
-					}
-					
 					.stepItem-container{
 						@include flex(column,center,center);
+						//outline:solid yellow;
 						height:auto;
 						width:auto;
-						outline:solid white;
-					}
 
-					.stepIcon{
-						outline:solid pink;
-						height:70px;
-						width:70px;
-						margin-bottom:5px;
-						
+						.stepIcon{
+							height:70px;
+							width:70px;
+							margin-bottom:5px;
+						}
 
 					}
+
 				}
 
 			}
@@ -163,3 +174,83 @@
 	}
 	
 }
+
+.home-3{
+	@include flex(initial,center,center);
+	height:auto;
+	width:100%;
+	background:$purpleBack;
+	padding:100px 0px;
+	color:#fff;
+
+	.home-3__container{
+		@include flex(column,flex-start,center);
+		//outline:solid red;
+		height:auto;
+		width:50%;
+		min-width:330px;
+		max-width:680px;
+
+		.home-3__subContainer{
+			//outline:solid yellow;
+			height:auto;
+			width:100%;
+			margin-top:20px;
+
+			.home-3__list{
+			//	outline:solid blue;
+				height:auto;
+				width:100%;
+
+				.list-item{
+					@include flex(column,flex-start,center);
+					background:$purplePlattform;
+					height:140px;
+					width:100%;
+					margin:20px 0px;
+					border-radius:20px;
+					transition:height 1s;
+					
+					.list-item__head{
+						@include flex(column,flex-start,center);
+						//outline:solid green;
+						width:95%;
+						margin:20px 0px 5px 0px;
+						height:100px;
+					transition:all 5s !important;
+
+						.btnCross{
+							background:$purplePlattform;
+							@include backImage('../icons/cross.png',center,cover);
+							height:60px;
+							width:60px;
+							border-radius:50px;
+						//	outline:solid red;
+							border:none;
+							margin:5px 0px 0px 0px;
+							transform:rotate(45deg);
+							z-index:5;
+							transition:all 0.5s;
+						}
+						
+					}
+
+					.list-item__paragraph{
+					//	outline:solid yellow;
+						width:95%;
+						margin-bottom:20px;
+						visibility:hidden;
+						text-align:center;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+
+}
+

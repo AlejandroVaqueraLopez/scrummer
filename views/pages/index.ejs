@@ -46,33 +46,90 @@
 				</div>
 				
 				<div class="stepsContainer">
-					<div class="stepItem">
-						<div class="stepItem-container">
-							<img class="stepIcon" src="./icons/toDo.png" alt="toDo">
-							<h3 class="paragraph-2">To do</h3>
+
+					<div class="stepItem-stGroup">
+						<div class="stepItem">
+							<div class="stepItem-container">
+								<img class="stepIcon" src="./icons/toDo.png" alt="toDo">
+								<h3 class="paragraph-2">To do</h3>
+							</div>
+						</div>
+
+						<div class="stepItem">
+							<div class="stepItem-container">
+								<img class="stepIcon" src="./icons/working.png" alt="working">
+								<h3 class="paragraph-2">Working</h3>
+							</div>
 						</div>
 					</div>
-					<div class="stepItem">
-						<div class="stepItem-container">
-							<img class="stepIcon" src="./icons/working.png" alt="working">
-							<h3 class="paragraph-2">Working</h3>
+
+					<div class="stepItem-ndGroup">
+						<div class="stepItem">
+							<div class="stepItem-container">
+								<img class="stepIcon" src="./icons/verify.png" alt="toVerify">
+								<h3 class="paragraph-2">To verify</h3>
+							</div>
+						</div>
+
+						<div class="stepItem">
+							<div class="stepItem-container">
+								<img class="stepIcon" src="./icons/done.png" alt="done">
+								<h3 class="paragraph-2">Done</h3>
+							</div>
 						</div>
 					</div>
-					<div class="stepItem">
-						<div class="stepItem-container">
-							<img class="stepIcon" src="./icons/verify.png" alt="toVerify">
-							<h3 class="paragraph-2">To verify</h3>
-						</div>
-					</div>
-					<div class="stepItem">
-						<div class="stepItem-container">
-							<img class="stepIcon" src="./icons/done.png" alt="done">
-							<h3 class="paragraph-2">Done</h3>
-						</div>
-					</div>
+
 				</div>
 			</div>
 
+		</div>
+
+	</section>
+
+	<section class="home-3">
+
+		<div class="home-3__container">
+			<h2 class="title">How to scrum?</h2>
+
+			<div class="home-3__subContainer">
+
+				<div class="home-3__list">
+
+					<div class="list-item" id="stFeatPlat">
+						<div class="list-item__head">
+							<h2 class="subtitle focus">Scrum team members</h2>
+							<input class="btnCross btnIcon" id="btnFeat-1" type="button">
+						</div>
+						<div class="list-item__paragraph" id="stFeatParagraph">
+							<p class="paragraph-2">The <b class="focus">scrum team</b> consists of one <b class="focus">scrum master</b>, one <b class="focus">product owner</b>, and <b class="focus">developers</b>. Within a scrum team, there are no sub-teams or hierarchies because all the members work at the <b class="focus">same level</b>. It is a cohesive unit of professionals focused on one objective at a time, the <b class="focus">product goal</b>.</p>
+						</div>
+					</div>
+
+					<div class="list-item"  id="ndFeatPlat">
+						<div class="list-item__head">
+							<h2 class="subtitle focus">Scrum values</h2>
+							<input class="btnCross btnIcon" id="btnFeat-2" type="button">
+						</div>
+						<div class="list-item__paragraph" id="ndFeatParagraph">
+							<p class="paragraph-2">Successful use of Scrum depends on people becoming more proficient in living five values: <b class="focus">Commitment</b>, <b class="focus">Focus</b>, <b class="focus">Openness</b>, <b class="focus">Respect</b>, and <b class="focus">Courage</b>.</p>
+						</div>
+					</div>
+
+					<div class="list-item" id="rdFeatPlat">
+						<div class="list-item__head">
+							<h2 class="subtitle focus">Scrum sprint</h2>
+							<input class="btnCross btnIcon" id="btnFeat-3" type="button">
+						</div>
+						<div class="list-item__paragraph" id="rdFeatParagraph">
+
+							<p class="paragraph-2">They are fixed length <b class="focus">events</b> of one <b class="focus">month</b> or <b class="focus">less</b> to create consistency. A new <b class="focus">sprint</b> starts immediately after the conclusion of the <b class="focus">previous sprint</b>.
+							</p>
+							<p class="paragraph-2">All the work necessary to achieve the <b class="focus">product goal</b>, happen within <b class="focus">sprints</b>.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
 		</div>
 
 	</section>
@@ -81,5 +138,6 @@
 
 	<script src="/socket.io/socket.io.min.js"></script><!--this is to read the presetted js file of socket.io moduleand use all the functionalities inside-->
 	<script src="./main.js"></script>
+	<script src="./js/mechanicals.js"></script>
 </body>
 </html>

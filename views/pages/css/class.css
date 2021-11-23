@@ -34,6 +34,9 @@
   transform: scale(0.92);
 }
 
+.btnIcon {
+  cursor: pointer;
+}
 .btnIcon:active {
   transform: scale(0.92);
 }
@@ -43,8 +46,17 @@
   font-size: 45px;
 }
 
+.subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+}
+
 .paragraph-2 {
   font-size: 18px;
+}
+
+.focus {
+  color: #00B3E1;
 }
 
 /*# sourceMappingURL=class.css.map */

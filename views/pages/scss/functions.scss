@@ -5,3 +5,9 @@
 	justify-content:$justify;
 	align-items:$align;
 }
+
+@mixin backImage($url,$position,$size){
+	background-image:url($url);
+	background-position:$position;
+	background-size:$size;
+}
