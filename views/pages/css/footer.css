@@ -1,0 +1,103 @@
+footer {
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  color: #fff;
+  flex-wrap: wrap;
+  background: #181A1B;
+}
+footer .footer-info__container {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  outline: solid yellow;
+  height: auto;
+  width: 330px;
+  margin: 10px 0px;
+}
+footer .footer-donation__container {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  outline: solid yellow;
+  height: auto;
+  width: 330px;
+  margin: 15px 0px;
+}
+footer .footer-donation__container .questionMark {
+  height: 30px;
+  width: auto;
+  margin-left: 15px;
+}
+footer .footer-donation__container .darkPanel {
+  position: fixed;
+  visibility: visible;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 55;
+}
+footer .footer-donation__container .questionInfo {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  outline: solid yellow;
+  height: 100%;
+  width: 100%;
+  visibility: visible;
+}
+footer .footer-donation__container .questionInfo .questionInfo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 330px;
+  outline: solid yellow;
+}
+footer .footer-donation__container .questionInfo .questionInfo-container ul {
+  box-sizing: border-box;
+  height: auto;
+  width: 100%;
+  outline: solid red;
+  list-style: none;
+  padding: 0px 18px;
+  margin: 10px 0px 0px 0px;
+  background: #673C9E;
+  border-radius: 20px;
+}
+footer .footer-donation__container .questionInfo .questionInfo-container ul li {
+  outline: solid green;
+  margin: 15px 0px;
+}
+footer .footer-donation__container .questionInfo .questionInfo-container ul li img {
+  height: 40px;
+  display: block;
+  width: auto;
+  outline: solid black;
+  margin-bottom: 10px;
+  margin-left: 125px;
+}
+footer .footer-donation__container .btnDonate {
+  height: 50px;
+  width: 100px;
+  color: inherit;
+  margin-left: 15px;
+  background: #0099C0;
+  border-radius: 10px;
+  border: none;
+}
+
+/*# sourceMappingURL=footer.css.map */

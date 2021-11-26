@@ -51,8 +51,16 @@
   font-size: 30px;
 }
 
+.paragraph {
+  font-size: 25px;
+}
+
 .paragraph-2 {
   font-size: 18px;
+}
+
+.paragraph-3 {
+  font-size: 15px;
 }
 
 .focus {
