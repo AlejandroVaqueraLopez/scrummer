@@ -1,5 +1,5 @@
 //these are the mechanicals of the entire web proyect ui
-//features toggle
+//features toggle (home page block number 3)
 //buttons
 let stBtnFeat = document.getElementById('btnFeat-1');
 let ndBtnFeat = document.getElementById('btnFeat-2');
@@ -13,6 +13,7 @@ let stBtnFeatToggle = false;
 let ndBtnFeatToggle = false;
 let rdBtnFeatToggle = false;
 
+
 stBtnFeat.addEventListener("click",() => {
 	stBtnFeatToggle = !stBtnFeatToggle;
 	if(stBtnFeatToggle == true){
@@ -20,7 +21,6 @@ stBtnFeat.addEventListener("click",() => {
 		stFeatPlat.style.height = 'auto';
 		stFeatParagraph.style.visibility = "visible";
 	}else{
-		stFeatPlat.style.transition = "all 1s";
 		stFeatParagraph.style.visibility = "hidden";
 		stBtnFeat.style.transform = 'rotate(-45deg)';
 		stFeatPlat.style.height = '140px';
@@ -55,3 +55,22 @@ rdBtnFeat.addEventListener("click",() => {
 		rdFeatPlat.style.height = '140px';
 	}
 });
+
+//benefits block toggle if you donate to scrummer 
+let btnQuestionMark = document.getElementById('btnQuestionMark');
+let btnCloseQuestion = document.getElementById('btnClose');
+let questionInfo = document.getElementById('questionInfo');
+let darkPanel = document.getElementById('darkPanel');
+
+btnQuestionMark.addEventListener('click',()=>{
+	questionInfo.style.top="0";
+	darkPanel.style.top="0";
+});
+
+btnCloseQuestion.addEventListener('click',()=>{
+	questionInfo.style.top="-100vh";
+	darkPanel.style.top="-100vh";
+});
+
+
+

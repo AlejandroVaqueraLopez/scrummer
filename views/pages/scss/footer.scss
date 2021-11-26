@@ -2,16 +2,15 @@
 @import "variables";
 
 footer{
-	@include flex(initial,space-around,center);
+	@include flex(column,center,center);
 	height:auto;
 	width:100%;
 	color:#fff;
-	flex-wrap:wrap;
 	background:$blackBack;
 
 	.footer-info__container{
 		@include flex(initial,center,center);
-		outline:solid yellow;
+		//outline:solid yellow;
 		height:auto;
 		width:330px;
 		margin:10px 0px;
@@ -20,14 +19,17 @@ footer{
 
 	.footer-donation__container{
 		@include flex(initial,center,center);
-		outline:solid yellow;
+		//outline:solid yellow;
 		height:auto;
 		width:330px;
 		margin:15px 0px;
 
-		.questionMark{
+		.btnQuestionMark{
+			background:none;
+			border:none;
+			@include backImage('../icons/question.png',center,cover);
 			height:30px;
-			width:auto;
+			width:30px;
 			margin-left:15px;
 		}
 
@@ -35,35 +37,45 @@ footer{
 			position:fixed;
 			visibility:visible;
 			left:0px;
-			top:0px;
+			top:-100vh;
 			height:100%;
 			width:100%;
 			background:rgba(0,0,0,0.9);
 			z-index:55;
+			transition:all 1s;
 		}
 
 		.questionInfo{
 			@include flex(initial,center,center);
 			position:fixed;
-			top:0;
+			top:-100vh;
 			left:0;
 			z-index:150;
-			outline:solid yellow;
+//			outline:solid yellow;
 			height:100%;
 			width:100%;
 			visibility:visible;
+			transition:all 1s;
 			
 			.questionInfo-container{
-				@include flex(column,center,center);
+				@include flex(column,center,flex-end);
 				height:auto;
 				width:330px;
-				outline:solid yellow;
+//				outline:solid yellow;
+
+				.btnClose{
+					background:none;
+					@include backImage('../icons/close.png',center,cover);
+					height:40px;
+					width:40px;
+					border:none;
+				}
 
 				ul{
 					box-sizing:border-box;
 					height:auto;
 					width:100%;
-					outline:solid red;
+					//outline:solid red;
 					list-style:none;
 					padding:0px 18px;
 					margin:10px 0px 0px 0px;
@@ -71,17 +83,27 @@ footer{
 					border-radius:20px;
 
 					li{
-						outline:solid green;
+						//outline:solid green;
 						margin:15px 0px;
+
+						h3{
+							text-align:center;
+						}
 
 						img{
 							height:40px;
 							display:block;
 							width:auto;
-							outline:solid black;
+//							outline:solid black;
 							margin-bottom:10px;
 							margin-left:125px;
 						}
+						p{
+
+							font-size:14px;
+							text-align:center;
+						}
+
 					}
 					
 				}

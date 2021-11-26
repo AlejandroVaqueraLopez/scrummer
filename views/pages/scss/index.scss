@@ -209,7 +209,6 @@
 					width:100%;
 					margin:20px 0px;
 					border-radius:20px;
-					transition:height 1s;
 					
 					.list-item__head{
 						@include flex(column,flex-start,center);
@@ -217,7 +216,6 @@
 						width:95%;
 						margin:20px 0px 5px 0px;
 						height:100px;
-					transition:all 5s !important;
 
 						.btnCross{
 							background:$purplePlattform;

@@ -5,33 +5,56 @@
 
 	<div class="footer-donation__container">
 		<h3 class="paragraph-2">Support scrummer!</h3>
-		<img class="questionMark" src="./icons/question.png" alt="question">
+		<input class="btnQuestionMark btnIcon" id="btnQuestionMark" type="button"> 
 
-		<div class="darkPanel">
+		<div class="darkPanel" id="darkPanel">
 			<!--this panel is used to show a modal-->
 		</div>
 
-		<div class="questionInfo">
+		<div class="questionInfo" id="questionInfo">
 				
 			<div class="questionInfo-container">
-				<h3 class="paragraph-2">Donating you will have these benefits:</h3>
+				<input id="btnClose" class="btnClose btnIcon" type="button">
 				<ul>
-					<li><img src="./icons/premium.png" alt="premium"><b class="focus">Premium user</b>: As <b class="focus">premium user</b> you can access to our exclusive <b class="focus">discord group</b> where you can colaborate with another developers in new software ideas and also close communication with <b class="focus">SCRUMMER team</b>.</li>
-					<li><img src="./icons/access.png" alt="access"><b class="focus">Access to the "Ideas Box"</b>: The "<b class="focus">Ideas Box</b>" is a SCRUMMER's blog where you can take a lot of proyects ideas from a large list that we prepare for you, this is perfect if you are looking for proyects to <b class="focus">enrich your portafolio</b>.</li>
-					<li><img src="./icons/mark.png" alt="mark"><b class="focus">Let your mark</b>: When you donate to SCRUMMER, your username will be automatically printed in our <b class="focus">Contributors Page</b> forever.</li>
+					<li>
+						<h3 class="paragraph-2">Donating you will have these benefits:</h3>
+					</li>
+					<li>
+						<img src="./icons/premium.png" alt="premium">
+						<p>
+							<b class="focus">Premium user</b>: As <b class="focus">premium user</b> you can access to our exclusive <b class="focus">discord group</b> where you can colaborate with another developers in new software ideas and also close communication with <b class="focus">SCRUMMER team</b>.
+						</p>
+					</li>
+					<li>
+						<img src="./icons/access.png" alt="access">
+						<p>
+							<b class="focus">Access to the "Ideas Box"</b>: The "<b class="focus">Ideas Box</b>" is a SCRUMMER's blog where you can take a lot of proyects ideas from a large list that we prepare for you, this is perfect if you are looking for proyects to <b class="focus">enrich your portafolio</b>.
+						</p>
+					</li>
+					<li>
+						<img src="./icons/mark.png" alt="mark">
+						<p>
+							<b class="focus">Let your mark</b>: When you donate to SCRUMMER, your username will be automatically printed in our <b class="focus">Contributors Page</b> forever.
+						</p>
+					</li>
 				</ul>
 			</div>
 
 		</div>
 
-		<input id="btnDonate" class="btnDonate paragraph-2" type="button" value="Donate">
+		<input id="btnDonate" class="btnDonate paragraph-2 btnIcon" type="button" value="Soon">
 	</div>
 
 	<div class="footer-info__container">
 		<h3 class="paragraph-3">
-			All scrummer rights reserved.
+			All rights reserved © 2021.
 		</h3>
 	</div>
+
+	<div id="errorMessage" class="errorMessage"></div>
+
+	<script src="https://js.stripe.com/v3"></script>
+	<!--<script src="./js/payment.js"></script> this js file is required when you have a rfc and stripe activated-->
 
 
 </footer>

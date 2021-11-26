@@ -1,12 +1,11 @@
 footer {
   display: flex;
-  flex-direction: initial;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: auto;
   width: 100%;
   color: #fff;
-  flex-wrap: wrap;
   background: #181A1B;
 }
 footer .footer-info__container {
@@ -14,7 +13,6 @@ footer .footer-info__container {
   flex-direction: initial;
   justify-content: center;
   align-items: center;
-  outline: solid yellow;
   height: auto;
   width: 330px;
   margin: 10px 0px;
@@ -24,25 +22,30 @@ footer .footer-donation__container {
   flex-direction: initial;
   justify-content: center;
   align-items: center;
-  outline: solid yellow;
   height: auto;
   width: 330px;
   margin: 15px 0px;
 }
-footer .footer-donation__container .questionMark {
+footer .footer-donation__container .btnQuestionMark {
+  background: none;
+  border: none;
+  background-image: url("../icons/question.png");
+  background-position: center;
+  background-size: cover;
   height: 30px;
-  width: auto;
+  width: 30px;
   margin-left: 15px;
 }
 footer .footer-donation__container .darkPanel {
   position: fixed;
   visibility: visible;
   left: 0px;
-  top: 0px;
+  top: -100vh;
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.9);
   z-index: 55;
+  transition: all 1s;
 }
 footer .footer-donation__container .questionInfo {
   display: flex;
@@ -50,28 +53,35 @@ footer .footer-donation__container .questionInfo {
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 0;
+  top: -100vh;
   left: 0;
   z-index: 150;
-  outline: solid yellow;
   height: 100%;
   width: 100%;
   visibility: visible;
+  transition: all 1s;
 }
 footer .footer-donation__container .questionInfo .questionInfo-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   height: auto;
   width: 330px;
-  outline: solid yellow;
+}
+footer .footer-donation__container .questionInfo .questionInfo-container .btnClose {
+  background: none;
+  background-image: url("../icons/close.png");
+  background-position: center;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  border: none;
 }
 footer .footer-donation__container .questionInfo .questionInfo-container ul {
   box-sizing: border-box;
   height: auto;
   width: 100%;
-  outline: solid red;
   list-style: none;
   padding: 0px 18px;
   margin: 10px 0px 0px 0px;
@@ -79,16 +89,21 @@ footer .footer-donation__container .questionInfo .questionInfo-container ul {
   border-radius: 20px;
 }
 footer .footer-donation__container .questionInfo .questionInfo-container ul li {
-  outline: solid green;
   margin: 15px 0px;
+}
+footer .footer-donation__container .questionInfo .questionInfo-container ul li h3 {
+  text-align: center;
 }
 footer .footer-donation__container .questionInfo .questionInfo-container ul li img {
   height: 40px;
   display: block;
   width: auto;
-  outline: solid black;
   margin-bottom: 10px;
   margin-left: 125px;
+}
+footer .footer-donation__container .questionInfo .questionInfo-container ul li p {
+  font-size: 14px;
+  text-align: center;
 }
 footer .footer-donation__container .btnDonate {
   height: 50px;
