@@ -63,14 +63,6 @@ footer{
 				width:330px;
 //				outline:solid yellow;
 
-				.btnClose{
-					background:none;
-					@include backImage('../icons/close.png',center,cover);
-					height:40px;
-					width:40px;
-					border:none;
-				}
-
 				ul{
 					box-sizing:border-box;
 					height:auto;

@@ -24,15 +24,81 @@
 		}
 	}
 
-	.header-box__menuIcon{
+	.header-box__btnOpenMenu{
 		height:60px;
 		width:60px;
 
-		.menuIcon{
+		.btnOpenMenu{
 			height:100%;
 			width:100%;
+			background:none;
+			@include backImage('../icons/menu.png',center,cover);
+			border:none
 		}
 	}
 }
 
+.menuPanel{
+	@include flex(initial,center,center);
+	position:fixed;
+	left:0;
+	top:-100vh;
+	height:100%;
+	width:100%;
+	background:rgba(0,0,0,0.9);
+	z-index:55;
+	transition:all 1s;
 
+	.menuPanel-container{
+		@include flex(column,flex-start,center);
+		//outline:solid red;
+		width:330px;
+		height:auto;
+
+		.btnCloseMenu-container{
+			@include flex(initial,flex-end,center);
+//			outline:solid blue;
+			height:auto;
+			width:100%;
+		}
+
+		ul{
+			@include flex(column,flex-start,center);
+			height:auto;
+			width:100%;
+			//outline:solid yellow;
+
+			li{
+				@include flex(initial,center,center);
+				width:75%;
+				height:90px;
+//				outline:solid blue;
+				list-style:none;
+				margin:10px 0px;
+				background:$purplePlattform;
+				border-radius:20px;
+
+				a{
+					@include flex(initial,flex-start,center);
+					width:88%;
+					height:auto;
+					//outline:solid yellow;
+					color:#fff;
+					text-decoration:none;
+
+					img{
+						//outline:solid blue;
+						width:60px;
+						height:60px;
+					}	
+					h3{
+						margin-left:15px;
+					}
+					
+
+				}
+			}
+		}
+	}
+
+}

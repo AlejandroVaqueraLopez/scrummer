@@ -19,6 +19,16 @@
   transform: scale(0.92);
 }
 
+.btnClose {
+  background: none;
+  background-image: url("../icons/close.png");
+  background-position: center;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  border: none;
+}
+
 .btnDelete {
   height: auto;
   width: auto;

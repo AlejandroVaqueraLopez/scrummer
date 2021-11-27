@@ -19,6 +19,16 @@
   transform: scale(0.92);
 }
 
+.btnClose {
+  background: none;
+  background-image: url("../icons/close.png");
+  background-position: center;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  border: none;
+}
+
 .btnDelete {
   height: auto;
   width: auto;
@@ -89,13 +99,86 @@
   height: 100%;
   width: auto;
 }
-.header .header-box__menuIcon {
+.header .header-box__btnOpenMenu {
   height: 60px;
   width: 60px;
 }
-.header .header-box__menuIcon .menuIcon {
+.header .header-box__btnOpenMenu .btnOpenMenu {
   height: 100%;
   width: 100%;
+  background: none;
+  background-image: url("../icons/menu.png");
+  background-position: center;
+  background-size: cover;
+  border: none;
+}
+
+.menuPanel {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: -100vh;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 55;
+  transition: all 1s;
+}
+.menuPanel .menuPanel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 330px;
+  height: auto;
+}
+.menuPanel .menuPanel-container .btnCloseMenu-container {
+  display: flex;
+  flex-direction: initial;
+  justify-content: flex-end;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+.menuPanel .menuPanel-container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+.menuPanel .menuPanel-container ul li {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 90px;
+  list-style: none;
+  margin: 10px 0px;
+  background: #673C9E;
+  border-radius: 20px;
+}
+.menuPanel .menuPanel-container ul li a {
+  display: flex;
+  flex-direction: initial;
+  justify-content: flex-start;
+  align-items: center;
+  width: 88%;
+  height: auto;
+  color: #fff;
+  text-decoration: none;
+}
+.menuPanel .menuPanel-container ul li a img {
+  width: 60px;
+  height: 60px;
+}
+.menuPanel .menuPanel-container ul li a h3 {
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=header.css.map */

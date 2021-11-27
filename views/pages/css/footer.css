@@ -69,15 +69,6 @@ footer .footer-donation__container .questionInfo .questionInfo-container {
   height: auto;
   width: 330px;
 }
-footer .footer-donation__container .questionInfo .questionInfo-container .btnClose {
-  background: none;
-  background-image: url("../icons/close.png");
-  background-position: center;
-  background-size: cover;
-  height: 40px;
-  width: 40px;
-  border: none;
-}
 footer .footer-donation__container .questionInfo .questionInfo-container ul {
   box-sizing: border-box;
   height: auto;

@@ -1,4 +1,5 @@
 @import "variables";
+@import "functions";
 *{
 	font-family: 'Roboto', sans-serif;
 	margin:0px;
@@ -20,6 +21,15 @@
 		transform:scale(0.92);
 	}
 }
+
+.btnClose{
+	background:none;
+	@include backImage('../icons/close.png',center,cover);
+	height:40px;
+	width:40px;
+	border:none;
+}
+
 
 .btnDelete{
 	height:auto;
