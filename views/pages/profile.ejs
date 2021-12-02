@@ -1,1 +1,62 @@
-ECHO est  activado.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>scrummer</title>
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/profile.css">
+	<link rel="stylesheet" href="./css/btnAdd.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@500&family=Ubuntu+Condensed&family=Zen+Kaku+Gothic+New:wght@300;500;900&display=swap" rel="stylesheet"> 
+
+	<!--https://fonts.google.com/specimen/Roboto?query=roboto this is the google font page-->
+</head>
+<body>
+	<%- include ('../partials/header.ejs')%> <!--From here we call our header block code-->
+
+	<section class="profile">
+		<div class="profile-container">
+			<h2 class="title">Profile</h2>
+
+			<form id="sing-form" class="profile-container__form">
+				<span class="form-input">
+					<h3 class="paragraph-2">Name</h3>
+					<input class="txtName paragraph-2" type="input" name="name" required>
+				</span>
+				<span class="form-input">
+					<h3 class="paragraph-2">Email</h3>
+					<input class="txtEmail paragraph-2" name="email"type="email" required>
+				</span>
+				<span class="form-input">
+					<h3 class="paragraph-2 paragraph-2">Password</h3>
+					<input id="password" class="txtPassword" type="password"  name="password" required>
+				</span>
+				<span class="form-input">
+					<h3><a href="./"><b class="focus">Log Out</b></a></h3>
+				</span>
+				
+				<span class="btnSubmit-container">
+					<input class="btnSuccess btnIcon" value="Sing up" type="submit">
+				</span>
+			</form>
+
+		</div>
+	</section>
+
+
+	
+	<%- include ('../partials/btnAdd.ejs')%> <!--From here we call the add btn code-->
+	<%- include ('../partials/footer.ejs')%> <!--From here we call our footer block code-->
+
+	<script src="/socket.io/socket.io.min.js"></script><!--this is to read the presetted js file of socket.io moduleand use all the functionalities inside-->
+	<script src="./main.js"></script>
+	<script src="./js/mechanicals.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+	<script src="./js/validationSingForm.js"></script>
+
+</body>
+</html>
