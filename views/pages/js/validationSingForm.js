@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#singUp-form").validate({
+  $("#sing-form").validate({
     rules: {
       name : {
         required: true,
