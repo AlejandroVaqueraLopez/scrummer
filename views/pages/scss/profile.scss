@@ -8,6 +8,120 @@
 	height:100vh;
 	width:100%;
 
+	//dark container and form of changing data
+	.darkContainer{
+		@include flex(initial,center,center);
+		position:fixed;
+		left:0;
+		top:-100vh;
+		height:100%;
+		width:100%;
+		background:rgba(0,0,0,0.9);
+		z-index:55;
+		transition:all 1s;
+
+		.changeProfile-container{
+			@include flex(column,center,center);
+			height:100vh;
+			width:50%;
+			color:#fff;
+			//outline:solid yellow;
+			min-width:280px;
+			max-width:400px;
+			overflow-y:auto;
+			padding:15px;
+
+			.btnCloseForm-container{
+				@include flex(initial,flex-end,center);
+				//outline:solid blue;
+				height:auto;
+				width:100%;
+				.btnCloseForm{
+					background:none;
+					border:none;
+					@include backImage('../icons/close.png',center,cover);
+					height:50px;
+					width:50px;
+				}
+			}
+
+
+			h2{
+				text-align:center;
+			}
+
+			.profile-container__form{
+				@include flex(column,center,flex-start);
+	//			outline:solid yellow;
+				width:100%;
+				height:auto;
+
+				.form-image{
+					@include flex(column,flex-start,center);
+					width:100%;
+					height:auto;
+//					outline:solid white;
+
+					.profileImage{
+						border-radius:50%;
+						padding:5px;
+						height:100px;
+						width:100px;
+						margin:10px 0px;
+						background:$purplePlattform;
+
+					}
+					.btnChangeImage{
+						background:none;
+						color:$blueFontColor;
+						border:none;
+
+					}
+				}
+				.form-input{
+	//				outline:solid blue;
+					margin:5px 0px;
+					width:100%;
+					height:auto;
+
+					h3{
+						margin-left:10px;
+					}
+
+					input{
+						color:#fff;
+						width:100%;
+						height:50px;
+						border-radius:30px;
+						border:none;
+						padding:0px 15px;
+						background:$purplePlattform;
+						box-sizing:border-box;
+					}
+
+					a{
+						text-decoration:none;
+						}
+				}
+
+				.btnSubmit-container{
+					@include flex(initial,center,center);
+					//outline:solid green;
+					width:100%;
+					height:auto;
+
+					.btnSuccess{
+						margin:5px 0px;
+					}
+				}
+
+			}
+
+		}
+
+
+	}
+
 	.profile-container{
 		@include flex(column,center,center);
 //outline:solid red;
@@ -27,6 +141,22 @@
 //			outline:solid yellow;
 			width:100%;
 			height:auto;
+
+			.form-image{
+				@include flex(column,flex-start,center);
+				width:100%;
+				height:auto;
+//					outline:solid white;
+					.profileImage{
+						border-radius:50%;
+						padding:5px;
+						height:100px;
+						width:100px;
+						margin:10px 0px;
+						background:$purplePlattform;
+
+					}
+			}
 
 			.form-input{
 //				outline:solid blue;
@@ -55,17 +185,16 @@
 				}
 				
 			}
+				.btnSubmit-container{
+					@include flex(initial,center,center);
+					//outline:solid green;
+					width:100%;
+					height:auto;
 
-			.btnSubmit-container{
-				@include flex(initial,center,center);
-				//outline:solid green;
-				width:100%;
-				height:auto;
-
-				.btnSuccess{
-					margin:5px 0px;
+					.btnSuccess{
+						margin:5px 0px;
+					}
 				}
-			}
 
 		}
 

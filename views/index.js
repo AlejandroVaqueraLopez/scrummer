@@ -1,6 +1,6 @@
-import express from "express";//express module from the installed node module
+const express = require("express");//express module from the installed node module
 import {Server as WebSocketServer} from "socket.io";//socket.io server from the installed node module
-import http from "http";//import of the http module directly from node
+const http = require("http");//import of the http module directly from node
 
 //IMPORTANT NOTE: IF YOU INSTALL A NODE MODULE, YOU NEED TO IMPORT IT AS TRADITIONAL, 'import ....'
 //BUT IF YOU HAVE ALREADY IT IN NODE JS JUST TYPE 'const --varName-- = require('moduleName')'

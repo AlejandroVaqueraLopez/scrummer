@@ -18,10 +18,48 @@
 	<%- include ('../partials/header.ejs')%> <!--From here we call our header block code-->
 
 	<section class="profile">
+
+		<div id="formMenu" class="darkContainer">
+			<div class="changeProfile-container">
+
+				<div class="btnCloseForm-container">
+					<input id="btnCloseForm" class="btnCloseForm btnIcon" type="button">
+				</div>
+
+				<h2 class="title">Change profile</h2>
+
+				<form id="sing-form" class="profile-container__form">
+					<span class="form-image">
+						<img id="profileImage" class="profileImage" src="./icons/profile.png" alt="Profile image">
+						<input id="btnChangeImage" class="btnChangeImage btnIcon paragraph-2" type="button" value="Change image">
+					</span>
+					<span class="form-input">
+						<h3 class="paragraph-2">Name</h3>
+						<input class="txtName paragraph-2" type="input" name="name" required>
+					</span>
+					<span class="form-input">
+						<h3 class="paragraph-2">Email</h3>
+						<input class="txtEmail paragraph-2" name="email"type="email" required>
+					</span>
+					<span class="form-input">
+						<h3 class="paragraph-2 paragraph-2">Password</h3>
+						<input id="password" class="txtPassword" type="password"  name="password" required>
+					</span>
+					
+					<span class="btnSubmit-container">
+						<input id="btnSaveProfile" class="btnSuccess btnIcon" value="Save profile" type="submit">
+					</span>
+				</form>
+			</div>
+		</div>
+
 		<div class="profile-container">
 			<h2 class="title">Profile</h2>
 
-			<form id="sing-form" class="profile-container__form">
+			<form class="profile-container__form">
+				<span class="form-image">
+					<img id="profileImage" class="profileImage" src="./icons/profile.png" alt="Profile image">
+				</span>
 				<span class="form-input">
 					<h3 class="paragraph-2">Name</h3>
 					<input class="txtName paragraph-2" type="input" name="name" required>
@@ -37,9 +75,8 @@
 				<span class="form-input">
 					<h3><a href="./"><b class="focus">Log Out</b></a></h3>
 				</span>
-				
 				<span class="btnSubmit-container">
-					<input class="btnSuccess btnIcon" value="Sing up" type="submit">
+					<input id="btnChangeProfile" class="btnSuccess btnIcon" value="Change profile" type="button">
 				</span>
 			</form>
 
@@ -54,6 +91,7 @@
 	<script src="/socket.io/socket.io.min.js"></script><!--this is to read the presetted js file of socket.io moduleand use all the functionalities inside-->
 	<script src="./main.js"></script>
 	<script src="./js/mechanicals.js"></script>
+	<script src="./js/formMechanicals.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 	<script src="./js/validationSingForm.js"></script>

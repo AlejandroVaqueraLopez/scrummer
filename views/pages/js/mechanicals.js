@@ -1,3 +1,4 @@
+//THIS FILE HAS ALL MECHANICALS OF HEADER AND FOOTER, SO IT NEEDS TO BE IN EVERY FILE SCRIPT
 //benefits block toggle if you donate to scrummer 
 let btnQuestionMark = document.getElementById('btnQuestionMark');
 let btnCloseQuestion = document.getElementById('btnCloseInfo');
