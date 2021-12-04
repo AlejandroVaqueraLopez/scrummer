@@ -29,6 +29,6 @@ io.on('connection',(socket) =>{
 	})
 });
 
-server.listen(3000);
+server.listen(3000,'192.168.100.242');//the second parameter is a specific ip to prove the app in every device 
 console.log('server on port',3000);
 	

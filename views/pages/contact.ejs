@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>scrummer</title>
+	<link rel="stylesheet" href="./css/contact.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@500&family=Ubuntu+Condensed&family=Zen+Kaku+Gothic+New:wght@300;500;900&display=swap" rel="stylesheet"> 
+
+	<!--https://fonts.google.com/specimen/Roboto?query=roboto this is the google font page-->
+</head>
+<body>
+	<%- include ('../partials/header.ejs')%> <!--From here we call our header block code-->
+
+	<section class="contact">
+		<div class="contact-container">
+			<h2 class="title">Contact</h2>
+
+			<form id="sing-form" class="contact-container__form">
+				<span class="form-input">
+					<h3 class="paragraph-2">Name</h3>
+					<input class="txtName paragraph-2" type="input" name="name" required>
+				</span>
+				<span class="form-input">
+					<h3 class="paragraph-2">Email</h3>
+					<input class="txtEmail paragraph-2" name="email"type="email" required>
+				</span>
+				<span class="form-input">
+					<h3 class="paragraph-2 paragraph-2">Message</h3>
+					<textarea id="password" class="txtPassword" name="message" required></textarea>
+				</span>
+				<span class="btnSubmit-container">
+					<input class="btnSuccess btnIcon" value="Send message" type="submit">
+				</span>
+			</form>
+
+		</div>
+	</section>
+
+
+	
+	<%- include ('../partials/footer.ejs')%> <!--From here we call our footer block code-->
+
+	<script src="/socket.io/socket.io.min.js"></script><!--this is to read the presetted js file of socket.io moduleand use all the functionalities inside-->
+	<script src="./main.js"></script>
+	<script src="./js/mechanicals.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+</body>
+</html>

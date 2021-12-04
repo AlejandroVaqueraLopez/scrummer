@@ -31,5 +31,10 @@ router.get('/howToScrum',(req,res)=>{
  res.render(__dirname + '/pages/howToScrum.ejs')
 });
 
+//contact page
+router.get('/contact',(req,res)=>{
+ res.render(__dirname + '/pages/contact.ejs')
+});
+
 module.exports = router;
 

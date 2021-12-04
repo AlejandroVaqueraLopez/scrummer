@@ -1,0 +1,186 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btnSuccess {
+  font-family: "Roboto", sans-serif;
+  height: auto;
+  width: auto;
+  padding: 8px 15px;
+  color: #fff;
+  font-size: 18px;
+  background: #0099C0;
+  border-radius: 30px;
+  border: none;
+}
+.btnSuccess:active {
+  transform: scale(0.92);
+}
+
+.btnClose {
+  background: none;
+  background-image: url("../icons/close.png");
+  background-position: center;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  border: none;
+}
+
+.btnDelete {
+  height: auto;
+  width: auto;
+  font-family: "Roboto", sans-serif;
+  padding: 8px 15px;
+  background: #FF4444;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+}
+.btnDelete:active {
+  transform: scale(0.92);
+}
+
+.btnIcon {
+  cursor: pointer;
+}
+.btnIcon:active {
+  transform: scale(0.92);
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+}
+
+.subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+}
+
+.paragraph {
+  font-size: 25px;
+}
+
+.paragraph-2 {
+  font-size: 18px;
+}
+
+.paragraph-3 {
+  font-size: 15px;
+}
+
+.focus {
+  color: #00B3E1;
+}
+
+.proyectPanel-section {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: flex-start;
+  background: #3C065E;
+  padding-top: 120px;
+  height: auto;
+  width: 100%;
+}
+.proyectPanel-section .proyectPanel-section__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  width: 95%;
+  min-width: 330px;
+  color: #fff;
+}
+.proyectPanel-section .proyectPanel-section__container h2 {
+  margin-bottom: 15px;
+}
+.proyectPanel-section .proyectPanel-section__container .proyectPanel-list {
+  display: flex;
+  flex-direction: initial;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.proyectPanel-section .proyectPanel-section__container .proyectPanel-list .proyectPanel-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #673C9E;
+  height: 400px;
+  width: 300px;
+  border-radius: 20px;
+  margin: 10px;
+}
+.proyectPanel-section .proyectPanel-section__container .proyectPanel-list .proyectPanel-list__item .proyectPreview {
+  background-image: url("../images/preview.png");
+  background-position: center;
+  background-size: cover;
+  height: 46%;
+  width: 95%;
+  margin: 5px;
+  border-radius: 20px;
+}
+.proyectPanel-section .proyectPanel-section__container .proyectPanel-list .proyectPanel-list__item .proyectInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  padding: 18px;
+  box-sizing: border-box;
+  border-radius: 0px 0px 20px 20px;
+}
+.proyectPanel-section .proyectPanel-section__container .proyectPanel-list .proyectPanel-list__item .proyectInfo .proyectName {
+  text-align: center;
+}
+.proyectPanel-section .proyectPanel-section__container .proyectPanel-list .proyectPanel-list__item .proyectInfo .proyectTeam {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 80px;
+  width: 100%;
+  margin: 10px 0px;
+}
+.proyectPanel-section .proyectPanel-section__container .proyectPanel-list .proyectPanel-list__item .proyectInfo .proyectTeam .teamMember-container {
+  white-space: nowrap;
+  overflow-x: auto;
+  height: 50px;
+  width: 100%;
+}
+.proyectPanel-section .proyectPanel-section__container .proyectPanel-list .proyectPanel-list__item .proyectInfo .proyectTeam .teamMember-container::-webkit-scrollbar {
+  height: 10px;
+  background: #673C9E;
+  border-radius: 5px;
+}
+.proyectPanel-section .proyectPanel-section__container .proyectPanel-list .proyectPanel-list__item .proyectInfo .proyectTeam .teamMember-container::-webkit-scrollbar-thumb {
+  height: 10px;
+  border-radius: 5px;
+  background: #0099C0;
+}
+.proyectPanel-section .proyectPanel-section__container .proyectPanel-list .proyectPanel-list__item .proyectInfo .proyectTeam .teamMember-container .teamMember {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #0099C0;
+}
+.proyectPanel-section .proyectPanel-section__container .proyectPanel-list .proyectPanel-list__item .proyectInfo .btnContainer {
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 80%;
+}
+
+/*# sourceMappingURL=proyectPanel.css.map */

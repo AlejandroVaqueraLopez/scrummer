@@ -1,0 +1,111 @@
+@import "variables";
+@import "class";
+@import "functions";
+
+.proyectPanel-section{
+	@include flex(initial,center,flex-start);
+	background:$purpleBack;
+	padding-top:120px;
+	height:auto;
+	width:100%;
+
+	.proyectPanel-section__container{
+		@include flex(column,flex-start,center);
+//		outline:solid yellow;
+		height:auto;
+		width:95%;
+		min-width:330px;
+		
+		color:#fff;
+	
+		h2{
+			margin-bottom:15px;
+		}
+
+		.proyectPanel-list{
+			@include flex(initial,flex-start,flex-start);
+			flex-wrap:wrap;
+//			outline:solid green;
+			width:100%;
+			height:auto;
+
+			.proyectPanel-list__item{
+//				outline:solid red;
+				@include flex(column,center,center);
+				background:$purplePlattform;
+				height:400px;
+				width:300px;
+				border-radius:20px;
+				margin:10px;
+				.proyectPreview{
+					@include backImage('../images/preview.png',center,cover);
+					height:46%;
+					width:95%;
+					margin:5px;
+					border-radius:20px;
+
+				}
+
+				.proyectInfo{
+					@include flex(column,space-around,center);
+					height:50%;
+					width:100%;
+					padding:18px;
+					box-sizing:border-box;
+//					outline:solid orange;
+					border-radius:0px 0px 20px 20px;
+
+					.proyectName{
+						text-align:center;
+					}
+
+					.proyectTeam{
+						@include flex(column,space-between,flex-start);
+//						outline:solid yellow;
+						height:80px;
+						width:100%;
+						margin:10px 0px;
+						.teamMember-container{
+							white-space:nowrap;
+							overflow-x:auto;
+//							outline:solid indianred;
+							height:50px;
+							width:100%;
+
+							&::-webkit-scrollbar{
+								height:10px;
+								background:$purplePlattform;
+								border-radius:5px;
+							}
+							&::-webkit-scrollbar-thumb{
+								height:10px;
+								border-radius:5px;
+								background:$blueBack;
+							}
+							.teamMember{
+								height:30px;
+								width:30px;
+								border-radius:50%;
+								background:$blueBack;
+							}
+
+						}
+
+					}
+
+					.btnContainer{
+						@include flex(initial,space-around,center);
+						//outline:solid red;
+						height:auto;
+						width:80%;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
