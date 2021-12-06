@@ -77,7 +77,7 @@
   color: #00B3E1;
 }
 
-.singUp {
+.signIn {
   display: flex;
   flex-direction: initial;
   justify-content: center;
@@ -86,7 +86,7 @@
   height: 100vh;
   width: 100%;
 }
-.singUp .singUp-container {
+.signIn .signIn-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,7 +98,7 @@
   max-width: 400px;
   margin: 100px 0px 40px 0px;
 }
-.singUp .singUp-container .singUp-container__form {
+.signIn .signIn-container .signIn-container__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,15 +106,15 @@
   width: 100%;
   height: auto;
 }
-.singUp .singUp-container .singUp-container__form .form-input {
+.signIn .signIn-container .signIn-container__form .form-input {
   margin: 5px 0px;
   width: 100%;
   height: auto;
 }
-.singUp .singUp-container .singUp-container__form .form-input h3 {
+.signIn .signIn-container .signIn-container__form .form-input h3 {
   margin-left: 10px;
 }
-.singUp .singUp-container .singUp-container__form .form-input input {
+.signIn .signIn-container .signIn-container__form .form-input input {
   color: #fff;
   width: 100%;
   height: 50px;
@@ -124,10 +124,10 @@
   background: #673C9E;
   box-sizing: border-box;
 }
-.singUp .singUp-container .singUp-container__form .form-input a {
+.signIn .signIn-container .signIn-container__form .form-input a {
   text-decoration: none;
 }
-.singUp .singUp-container .singUp-container__form .btnSubmit-container {
+.signIn .signIn-container .signIn-container__form .btnSubmit-container {
   display: flex;
   flex-direction: initial;
   justify-content: center;
@@ -135,8 +135,8 @@
   width: 100%;
   height: auto;
 }
-.singUp .singUp-container .singUp-container__form .btnSubmit-container .btnSuccess {
+.signIn .signIn-container .signIn-container__form .btnSubmit-container .btnSuccess {
   margin: 5px 0px;
 }
 
-/*# sourceMappingURL=singUp.css.map */
+/*# sourceMappingURL=signIn.css.map */

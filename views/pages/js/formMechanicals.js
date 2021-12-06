@@ -1,18 +1,18 @@
 
-let formMenu = document.getElementById('formMenu');
-let btnSaveProfile = document.getElementById('btnSaveProfile');
-let btnChangeProfile = document.getElementById('btnChangeProfile');
+let form= document.getElementById('form');
+let btnSave= document.getElementById('btnSave');
+let btnOpenForm = document.getElementById('btnOpenForm');
 let btnCloseForm = document.getElementById('btnCloseForm');
 
-btnChangeProfile.addEventListener('click', ()=>{
-	formMenu.style.top = '0';
+btnOpenForm.addEventListener('click', ()=>{
+	form.style.top = '0';
 });
-btnSaveProfile.addEventListener('click', ()=>{
+btnSave.addEventListener('click', ()=>{
 	//in here we need the backend
-	formMenu.style.top = '-100vh';
+	//form.style.top = '-100vh';
 });
 btnCloseForm.addEventListener('click', ()=>{
-	formMenu.style.top = '-100vh';
+	form.style.top = '-100vh';
 });
 
 

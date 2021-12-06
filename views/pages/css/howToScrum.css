@@ -1,0 +1,175 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btnSuccess {
+  font-family: "Roboto", sans-serif;
+  height: auto;
+  width: auto;
+  padding: 8px 15px;
+  color: #fff;
+  font-size: 18px;
+  background: #0099C0;
+  border-radius: 30px;
+  border: none;
+}
+.btnSuccess:active {
+  transform: scale(0.92);
+}
+
+.btnClose {
+  background: none;
+  background-image: url("../icons/close.png");
+  background-position: center;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  border: none;
+}
+
+.btnDelete {
+  height: auto;
+  width: auto;
+  font-family: "Roboto", sans-serif;
+  padding: 8px 15px;
+  background: #FF4444;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+}
+.btnDelete:active {
+  transform: scale(0.92);
+}
+
+.btnIcon {
+  cursor: pointer;
+}
+.btnIcon:active {
+  transform: scale(0.92);
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+}
+
+.subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+}
+
+.paragraph {
+  font-size: 25px;
+}
+
+.paragraph-2 {
+  font-size: 18px;
+}
+
+.paragraph-3 {
+  font-size: 15px;
+}
+
+.focus {
+  color: #00B3E1;
+}
+
+.howToScrum {
+  display: flex;
+  flex-direction: initial;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100%;
+  padding-top: 80px;
+  background: #3C065E;
+  box-sizing: border-box;
+}
+.howToScrum .howToScrum-container {
+  outline: solid yellow;
+  height: calc(100vh - 80px);
+  width: 100%;
+  background: blue;
+  padding-top: 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.howToScrum .howToScrum-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.howToScrum .howToScrum-container .team-container {
+  height: 70px;
+  width: 330px;
+  margin-left: 15px;
+  box-sizing: border-box;
+}
+.howToScrum .howToScrum-container .team-container .teamMember-container {
+  outline: solid red;
+  height: 50px;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.howToScrum .howToScrum-container .team-container .teamMember-container::-webkit-scrollbar {
+  height: 10px;
+  background: #673C9E;
+  border-radius: 5px;
+}
+.howToScrum .howToScrum-container .team-container .teamMember-container::-webkit-scrollbar-thumb {
+  height: 10px;
+  background: #0099C0;
+  border-radius: 5px;
+}
+.howToScrum .howToScrum-container .team-container .teamMember-container .teamMember {
+  outline: solid pink;
+  height: 30px;
+  width: 30px;
+  margin: 0px 3px;
+  border-radius: 50%;
+}
+.howToScrum .howToScrum-container .mainAxisList {
+  outline: solid red;
+  height: 200px;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.howToScrum .howToScrum-container .mainAxisList::-webkit-scrollbar {
+  height: 10px;
+  background: #673C9E;
+  border-radius: 5px;
+}
+.howToScrum .howToScrum-container .mainAxisList::-webkit-scrollbar-thumb {
+  height: 10px;
+  background: #0099C0;
+  border-radius: 5px;
+}
+.howToScrum .howToScrum-container .mainAxisList .crossAxisList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-block;
+  outline: solid yellow;
+  width: 330px;
+  height: 100px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.howToScrum .howToScrum-container .mainAxisList .crossAxisList h3 {
+  color: #00B3E1;
+  outline: solid green;
+}
+.howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item {
+  outline: solid purple;
+  width: 90%;
+  height: 390px;
+}
+
+/*# sourceMappingURL=howToScrum.css.map */

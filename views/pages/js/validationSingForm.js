@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#sing-form").validate({
+  $("#sign-form").validate({
     rules: {
       name : {
         required: true,

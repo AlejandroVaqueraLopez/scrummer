@@ -5,7 +5,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>scrummer</title>
-	<link rel="stylesheet" href="./css/header.css">
 	<link rel="stylesheet" href="./css/profile.css">
 	<link rel="stylesheet" href="./css/btnAdd.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,8 +17,9 @@
 	<%- include ('../partials/header.ejs')%> <!--From here we call our header block code-->
 
 	<section class="profile">
+		<!--here starts the dark container-->
 
-		<div id="formMenu" class="darkContainer">
+		<div id="form" class="darkContainer">
 			<div class="changeProfile-container">
 
 				<div class="btnCloseForm-container">
@@ -28,7 +28,7 @@
 
 				<h2 class="title">Change profile</h2>
 
-				<form id="sing-form" class="profile-container__form">
+				<form id="sign-form" class="profile-container__form">
 					<span class="form-image">
 						<img id="profileImage" class="profileImage" src="./icons/profile.png" alt="Profile image">
 						<input id="btnChangeImage" class="btnChangeImage btnIcon paragraph-2" type="button" value="Change image">
@@ -47,11 +47,12 @@
 					</span>
 					
 					<span class="btnSubmit-container">
-						<input id="btnSaveProfile" class="btnSuccess btnIcon" value="Save profile" type="submit">
+						<input id="btnSave" class="btnSuccess btnIcon" value="Save profile" type="submit">
 					</span>
 				</form>
 			</div>
 		</div>
+		<!--here ends the dark container-->
 
 		<div class="profile-container">
 			<h2 class="title">Profile</h2>
@@ -76,7 +77,7 @@
 					<h3><a href="./"><b class="focus">Log Out</b></a></h3>
 				</span>
 				<span class="btnSubmit-container">
-					<input id="btnChangeProfile" class="btnSuccess btnIcon" value="Change profile" type="button">
+					<input id="btnOpenForm" class="btnSuccess btnIcon" value="Change profile" type="button">
 				</span>
 			</form>
 

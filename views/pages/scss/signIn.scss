@@ -2,13 +2,13 @@
 @import "variables";
 @import "functions";
 
-.singIn{
+.signIn{
 	@include flex(initial,center,flex-start);
 	background:$purpleBack;
 	height:100vh;
 	width:100%;
 
-	.singIn-container{
+	.signIn-container{
 		@include flex(column,center,center);
 //outline:solid red;
 		height:500px;
@@ -22,7 +22,7 @@
 
 		}
 
-		.singIn-container__form{
+		.signIn-container__form{
 			@include flex(column,center,flex-start);
 //			outline:solid yellow;
 			width:100%;

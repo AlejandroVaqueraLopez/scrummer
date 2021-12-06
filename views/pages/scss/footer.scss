@@ -51,7 +51,7 @@ footer{
 			top:-100vh;
 			left:0;
 			z-index:150;
-//			outline:solid yellow;
+	//outline:solid yellow;
 			height:100%;
 			width:100%;
 			visibility:visible;
@@ -61,7 +61,7 @@ footer{
 				@include flex(column,center,flex-end);
 				height:auto;
 				width:330px;
-//				outline:solid yellow;
+		//outline:solid yellow;
 
 				ul{
 					box-sizing:border-box;

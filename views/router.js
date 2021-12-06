@@ -6,9 +6,9 @@ router.get('/',(req,res)=>{
  res.render(__dirname + '/pages/index.ejs')
 });
 
-//singUp page
-router.get('/singUp',(req,res)=>{
- res.render(__dirname + '/pages/singUp.ejs')
+//signUp page
+router.get('/signUp',(req,res)=>{
+ res.render(__dirname + '/pages/signUp.ejs')
 });
 
 //proyects page
@@ -16,9 +16,9 @@ router.get('/proyectPanel',(req,res)=>{
  res.render(__dirname + '/pages/proyectPanel.ejs')
 });
 
-//singIn page
-router.get('/singIn',(req,res)=>{
- res.render(__dirname + '/pages/singIn.ejs')
+//signIn page
+router.get('/signIn',(req,res)=>{
+ res.render(__dirname + '/pages/signIn.ejs')
 });
 
 //profile page

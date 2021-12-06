@@ -342,6 +342,8 @@
 	width:100%;
 	background:$purpleBack;
 
+
+//here ends the dark container
 	.home-5__container{
 		@include flex(column,flex-start,center);
 		height:auto;

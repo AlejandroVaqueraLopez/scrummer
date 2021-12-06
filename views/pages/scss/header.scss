@@ -25,8 +25,8 @@
 	}
 
 	.header-box__btnOpenMenu{
-		height:60px;
-		width:60px;
+		height:50px;
+		width:50px;
 
 		.btnOpenMenu{
 			height:100%;
@@ -60,6 +60,18 @@
 //			outline:solid blue;
 			height:auto;
 			width:100%;
+		}
+
+		.login-container{
+			@include flex(initial,space-around,center);
+			height:auto;
+			width:75%;
+			//outline:solid red;
+
+			a{
+				text-decoration:none;
+				color:$blueFontColor;
+			}
 		}
 
 		ul{

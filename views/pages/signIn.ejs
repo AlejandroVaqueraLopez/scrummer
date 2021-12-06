@@ -4,8 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>scrummer</title>
-	<link rel="stylesheet" href="./css/header.css">
-	<link rel="stylesheet" href="./css/singUp.css">
+	<link rel="stylesheet" href="./css/signIn.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@500&family=Ubuntu+Condensed&family=Zen+Kaku+Gothic+New:wght@300;500;900&display=swap" rel="stylesheet"> 
@@ -15,34 +14,26 @@
 <body>
 	<%- include ('../partials/header.ejs')%> <!--From here we call our header block code-->
 
-	<section class="singUp">
-		<div class="singUp-container">
-			<h2 class="title">Sing up</h2>
+	<section class="signIn">
+		<div class="signIn-container">
+			<h2 class="title">Sign In</h2>
 
-			<form id="sing-form" class="singUp-container__form">
-				<span class="form-input">
-					<h3 class="paragraph-2">Name</h3>
-					<input class="txtName paragraph-2" type="input" name="name" required>
-				</span>
+			<form id="sign-form" class="signIn-container__form">
 				<span class="form-input">
 					<h3 class="paragraph-2">Email</h3>
-					<input class="txtEmail paragraph-2" name="email"type="email" required>
+					<input class="txtEmail paragraph-2" type="email" name="email" required>
 				</span>
 				<span class="form-input">
 					<h3 class="paragraph-2 paragraph-2">Password</h3>
 					<input id="password" class="txtPassword" type="password"  name="password" required>
 				</span>
 				<span class="form-input">
-					<h3  class="paragraph-2 paragraph-2">Confirm password</h3>
-					<input class="txtPasswordConfirm" type="password" name="passwordConfirm" required>
-				</span>
-				<span class="form-input">
-					<h3>You have an account? <a href="./singIn"><b class="focus">Sing in</b></a></h3>
+					<h3>Don't have an account? <a href="./signUp"><b class="focus">Sign up</b></a></h3>
 
 				</span>
 				
 				<span class="btnSubmit-container">
-					<input class="btnSuccess btnIcon" value="Sing up" type="submit">
+					<input class="btnSuccess btnIcon" value="Sign in" type="submit">
 				</span>
 			</form>
 
@@ -59,6 +50,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 	<script src="./js/validationSingForm.js"></script>
+	<script src="./js/androidVKeyboardFix.js"></script>
 
 </body>
 </html>
