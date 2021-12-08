@@ -11,7 +11,7 @@
 	box-sizing:border-box;
 
 	.howToScrum-container{
-		outline:solid yellow;
+		//outline:solid yellow;
 		height:calc(100vh - 80px);
 		width:100%;
 		background:$purpleBack;
@@ -51,11 +51,11 @@
 						border-radius:5px;
 					}
 				.teamMember{
-					outline:solid pink;
 					height:30px;
 					width:30px;
 					margin:0px 3px;
 					border-radius:50%;
+					background:$purplePlattform;
 				}
 			}
 		}
@@ -128,6 +128,39 @@
 								height:auto;
 								width:90%;
 								//outline:solid pink;
+
+								.assignedTeamMember-container{
+									//outline:solid green;
+									height:50px;
+									width:100%;
+									white-space:nowrap;
+									overflow-x:auto;
+									margin:5px 0px;
+									&::-webkit-scrollbar{
+										height:10px;
+										background:$purplePlattform;
+										border-radius:5px;
+									}
+									&::-webkit-scrollbar-thumb{
+										height:10px;
+										background:$blueBack;
+										border-radius:5px;
+									}
+
+									.assignedTeamMember-img{
+										height:30px;
+										width:30px;
+										border-radius:50%;
+										background:$purpleBack;
+									}
+								}
+
+								.dueDate-container{
+									//outline:solid red;
+									width:100%;
+									margin:5px 0px;
+
+								}
 							}
 
 							.btnEdit{

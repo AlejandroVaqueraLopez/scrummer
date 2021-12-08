@@ -89,7 +89,6 @@
   box-sizing: border-box;
 }
 .howToScrum .howToScrum-container {
-  outline: solid yellow;
   height: calc(100vh - 80px);
   width: 100%;
   background: #3C065E;
@@ -126,11 +125,11 @@
   border-radius: 5px;
 }
 .howToScrum .howToScrum-container .team-container .teamMember-container .teamMember {
-  outline: solid pink;
   height: 30px;
   width: 30px;
   margin: 0px 3px;
   border-radius: 50%;
+  background: #673C9E;
 }
 .howToScrum .howToScrum-container .mainAxisList {
   outline: solid red;
@@ -207,6 +206,33 @@
   align-items: flex-start;
   height: auto;
   width: 90%;
+}
+.howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container .crossAxisList-item .info-container .assignedTeamMember-container {
+  height: 50px;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  margin: 5px 0px;
+}
+.howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container .crossAxisList-item .info-container .assignedTeamMember-container::-webkit-scrollbar {
+  height: 10px;
+  background: #673C9E;
+  border-radius: 5px;
+}
+.howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container .crossAxisList-item .info-container .assignedTeamMember-container::-webkit-scrollbar-thumb {
+  height: 10px;
+  background: #0099C0;
+  border-radius: 5px;
+}
+.howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container .crossAxisList-item .info-container .assignedTeamMember-container .assignedTeamMember-img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #3C065E;
+}
+.howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container .crossAxisList-item .info-container .dueDate-container {
+  width: 100%;
+  margin: 5px 0px;
 }
 .howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container .crossAxisList-item .btnEdit {
   background: none;
