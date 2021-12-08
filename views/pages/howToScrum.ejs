@@ -46,87 +46,123 @@
 
 				<div class="crossAxisList">
 					<h3 class="paragraph-3"><b class="focus">What is SCRUM?</b></h3>
-					<div class="crossAxisList-item__container">
+					<div class="crossAxisList-item__container ">
 
-						<div class="crossAxisList-item draggable"draggable="true">
+						<div class="crossAxisList-item "draggable="true">
 							<p class="paragraph-3">
-								SfSor complex problems.
-								SfSor complex problems.
+								Scrum is a <b class="focus">lightweight framework</b> that helps people, teams and organizations generate value through <b class="focus">adaptive</b> solutions for complex problems.
 							</p>
 						</div>
-						<div class="crossAxisList-item draggable"draggable="true">
+
+						<div class="crossAxisList-item"draggable="true">
 							<p class="paragraph-3">
-								SfSor complex problems.
-								SfSor complex problems.
-								SfSor complex problems.
-								SfSor complex problems.
+								The <b class="focus">scrum framework</b> is purposefully <b class="focus">incomplete</b>, only defining the parts required to implement scrum theory. Scrum is built upon by the <b class="focus">collective intelligence</b> of the people using it. Rather than provide people with detailed instructions, the rules of scrum guide their <b class="focus">relationships</b> and <b class="focus">interactions</b>.
 							</p>
 						</div>
-						<div class="crossAxisList-item draggable"draggable="true">
+
+						<div class="crossAxisList-item"draggable="true">
 							<p class="paragraph-3">
-								SfSor complex problems.
-								SfSor complex problems.
-								SfSor complex problems.
-								SfSor complex problems.
+								The <b class="focus">sprints</b> are fixed length <b class="focus">events</b> of one <b class="focus">month</b> or <b class="focus">less</b> to create consistency. A new sprint starts immediately after the conclusion of the previous one.
 							</p>
 						</div>
-						<div class="crossAxisList-item draggable"draggable="true">
+
+						<div class="crossAxisList-item"draggable="true">
 							<p class="paragraph-3">
-								SfSor complex problems.
-								SfSor complex problems.
-								SfSor complex problems.
-								SfSor complex problems.
+								All the work necessary to achieve the product <b class="focus">goal</b>, including <b class="focus">daily scrums</b>, <b class="focus">sprint review</b>, and <b class="focus">sprint retrospective</b>, happen within sprints.
 							</p>
 						</div>
-						<div class="crossAxisList-item draggable"draggable="true">
+
+						<div class="crossAxisList-item"draggable="true">
 							<p class="paragraph-3">
-								SfSor complex problems.
-								SfSor complex problems.
-								SfSor complex problems.
-								SfSor complex problems.
+								During the Sprint: <b class="focus">No changes</b> are made that would endanger the <b class="focus">sprint goal</b>.
 							</p>
 						</div>
-						<div class="crossAxisList-item draggable"draggable="true">
+
+						<div class="crossAxisList-item"draggable="true">
 							<p class="paragraph-3">
-								SfSor complex problems.
-								SfSor complex problems.
-								SfSor complex problems.
-								SfSor complex problems.
+								Quality does <b class="focus">not decrease</b>.
 							</p>
 						</div>
-						<div class="crossAxisList-item draggable" draggable="true">
+
+						<div class="crossAxisList-item " draggable="true">
 							<p class="paragraph-3">
-								SfSor complex problems.
-								SfSor complex problems.
-								SfSor complex problems.
-								SfSor complex problems.
+								The <b class="focus">Product Backlog</b> is refined as needed.
 							</p>
 						</div>
-						<div class="crossAxisList-item draggable"draggable="true">
+
+						<div class="crossAxisList-item "draggable="true">
 							<p class="paragraph-3">
-								SfSor complex problems.
-								SfSor complex problems.
-								SfSor complex problems.
-								SfSor complex problems.
+								Scope may be clarified and renegotiated with the <b class="focus">Product Owner</b> as more is learned.
 							</p>
 						</div>
 
 					</div>
 				</div>
 
+				<!--product backlog section-->
 				<div class="crossAxisList">
 					<h3 class="paragraph-3"><b class="focus">Product Backlog</b> - Stories</h3>
-					<div class="crossAxisList-item__container">
-						<div class="crossAxisList-item">
+					<div class="crossAxisList-item__container productBacklogContainer">
+
+						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+							<p class="paragraph-3">
+								The <b class="focus">product backlog</b> is the current list of user stories for the product. User stories can be <b class="focus">added</b>, <b class="focus">modified</b> or <b class="focus">removed</b> from the backlog during the project.
+							</p>
 						</div>
+
+						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+							<p class="paragraph-3">
+								<b class="focus">Product backlog</b> refinement is the act of breaking down and further defining <b class="focus">product backlog</b> items into smaller more precise items. This is an ongoing activity to add details, such as a description, order, and size. <b class="focus">Attributes</b> often vary with the domain of work.
+							</p>
+						</div>
+
+						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+							<div class="info-container">
+								<h3 class="paragraph-2">Story name</h3>
+								<p class="paragraph-3">
+									Every <b class="focus">story</b> item can be like this:   (As a user we want to)
+								</p>
+							</div>
+							<input class="btnEdit btnIcon" type="button">
+						</div>
+
 					</div>
 				</div>
 
+				<!--Sprint backlog section-->
 				<div class="crossAxisList">
 					<h3 class="paragraph-3"><b class="focus">Sprint Backlog</b> - To do</h3>
 					<div class="crossAxisList-item__container">
-						<div class="crossAxisList-item">
+
+						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+							<p class="paragraph-3">
+								Subset of <b class='focus'>user stories</b> from the <b class='focus'>product backlog</b> that are planned to be worked as part of a <b class='focus'>sprint</b> to work.
+							</p>
 						</div>
+
+						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+							<p class="paragraph-3">
+								The <b class="focus">sprint backlog</b> is a plan by and for the developers. It is a highly visible, real-time picture of the work that the developers plan to accomplish during the <b class="focus">sprint</b> in order to achieve the <b class="focus">sprint goal</b>.
+							</p>
+						</div>
+
+						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+							<div class="info-container">
+								<h3 class="paragraph-2">Function name</h3>
+								<p class="paragraph-3">
+									Here you describe a <b class="focus">function</b> as a <b class="focus">task</b> to get done a specific <b class="focus">story</b>. You can make <b class="focus">unlimited functions</b> of every <b class="focus">story</b>.
+								</p>
+								<div class="assignedTeamMember-container">
+									<img class="assignedTeamMember-img" src="" alt="">
+									<img class="assignedTeamMember-img" src="" alt="">
+									<img class="assignedTeamMember-img" src="" alt="">
+									<img class="assignedTeamMember-img" src="" alt="">
+
+								</div>
+							</div>
+							<input class="btnEdit btnIcon" type="button">
+						</div>
+
 					</div>
 				</div>
 
@@ -154,6 +190,7 @@
 					</div>
 				</div>
 
+				<!--daily scrumm section-->
 				<div class="crossAxisList">
 					<h3 class="paragraph-3"><b class="focus">Daily Scrum</b></h3>
 					<div class="crossAxisList-item__container">
@@ -162,6 +199,7 @@
 					</div>
 				</div>
 
+				<!--sprint review section-->
 				<div class="crossAxisList">
 					<h3 class="paragraph-3"><b class="focus">Sprint Review</b></h3>
 					<div class="crossAxisList-item__container">
@@ -170,6 +208,7 @@
 					</div>
 				</div>
 
+				<!--sprint retrospective section-->
 				<div class="crossAxisList">
 					<h3 class="paragraph-3"><b class="focus">Sprint Retrospective</b></h3>
 					<div class="crossAxisList-item__container">
@@ -179,8 +218,6 @@
 				</div>
 
 			</div>
-
-
 		</div>
 
 	</section>
@@ -193,11 +230,9 @@
 	<script src="/socket.io/socket.io.min.js"></script><!--this is to read the presetted js file of socket.io moduleand use all the functionalities inside-->
 	<script src="./main.js"></script>
 	<script src="./js/mechanicals.js"></script>
-	<script src="./js/formMechanicals.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-	<script src="./js/validationSingForm.js"></script>
 	<script src="./js/androidVKeyboardFix.js"></script>
-
+	<script src="./js/draggables.js"></script>
 </body>
 </html>

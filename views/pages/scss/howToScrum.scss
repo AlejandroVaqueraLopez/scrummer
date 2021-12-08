@@ -113,19 +113,40 @@
 						width:100%;
 
 						.crossAxisList-item{
+							@include flex(initial,flex-start,center);
 							width:92%;
 							height:auto;
 							margin:5px 0px;
-							border-radius:10px;
+							border-radius:20px;
 							background:$purplePlattform;
 							box-sizing:border-box;
-							padding:10px;
+							padding:15px;
 							cursor:move;
-							p{
-								//nothing yet
 
+							.info-container{
+								@include flex(column,flex-start,flex-start);
+								height:auto;
+								width:90%;
+								//outline:solid pink;
 							}
 
+							.btnEdit{
+								background:none;
+								width:10%;
+								height:50px;
+							//	outline:solid red;
+								border:none;
+								@include backImage('../icons/dots.png',center,cover);
+
+							}
+							p{
+								//nothing yet
+							}
+
+						}
+
+						.dragProductBacklog.dragging{
+							outline:solid $blueBack;
 						}
 
 					}

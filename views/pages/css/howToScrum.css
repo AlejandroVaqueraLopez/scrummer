@@ -187,14 +187,38 @@
   width: 100%;
 }
 .howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container .crossAxisList-item {
+  display: flex;
+  flex-direction: initial;
+  justify-content: flex-start;
+  align-items: center;
   width: 92%;
   height: auto;
   margin: 5px 0px;
-  border-radius: 10px;
+  border-radius: 20px;
   background: #673C9E;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 15px;
   cursor: move;
+}
+.howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container .crossAxisList-item .info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: auto;
+  width: 90%;
+}
+.howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container .crossAxisList-item .btnEdit {
+  background: none;
+  width: 10%;
+  height: 50px;
+  border: none;
+  background-image: url("../icons/dots.png");
+  background-position: center;
+  background-size: cover;
+}
+.howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container .dragProductBacklog.dragging {
+  outline: solid #0099C0;
 }
 
 /*# sourceMappingURL=howToScrum.css.map */
