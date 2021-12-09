@@ -106,7 +106,7 @@
 
 					.crossAxisList-item__container{
 						@include flex(column,flex-start,center);
-						//outline:solid pink;
+//						outline:solid pink;
 						padding-top:10px;
 						box-sizing:border-box;
 						height:auto;
@@ -178,7 +178,7 @@
 						}
 
 						.dragProductBacklog.dragging{
-						//	outline:solid $blueBack;
+//							outline:solid $blueBack;
 						}
 
 					}

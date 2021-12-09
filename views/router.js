@@ -36,5 +36,10 @@ router.get('/contact',(req,res)=>{
  res.render(__dirname + '/pages/contact.ejs')
 });
 
+//proyect content page
+router.get('/proyectContent',(req,res)=>{
+ res.render(__dirname + '/pages/proyectContent.ejs')
+});
+
 module.exports = router;
 
