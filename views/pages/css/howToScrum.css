@@ -153,22 +153,11 @@
   width: 330px;
   height: 99%;
   box-sizing: border-box;
-  overflow-y: auto;
-  overflow-x: none;
   white-space: normal;
-}
-.howToScrum .howToScrum-container .mainAxisList .crossAxisList::-webkit-scrollbar {
-  width: 10px;
-  background: #673C9E;
-  border-radius: 5px;
-}
-.howToScrum .howToScrum-container .mainAxisList .crossAxisList::-webkit-scrollbar-thumb {
-  width: 10px;
-  background: #0099C0;
-  border-radius: 5px;
 }
 .howToScrum .howToScrum-container .mainAxisList .crossAxisList h3 {
   text-align: center;
+  height: 5%;
 }
 .howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container {
   display: flex;
@@ -177,8 +166,20 @@
   align-items: center;
   padding-top: 10px;
   box-sizing: border-box;
-  height: auto;
   width: 100%;
+  white-space: normal;
+  overflow-y: auto;
+  height: 95%;
+}
+.howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container::-webkit-scrollbar {
+  width: 10px;
+  background: #673C9E;
+  border-radius: 5px;
+}
+.howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: #0099C0;
+  border-radius: 5px;
 }
 .howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container .crossAxisList-item {
   display: flex;
@@ -229,6 +230,9 @@
   width: 100%;
   margin: 5px 0px;
 }
+.howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container .crossAxisList-item .info-container .dueDate-container h3 {
+  text-align: start;
+}
 .howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container .crossAxisList-item .btnEdit {
   background: none;
   width: 10%;
@@ -238,6 +242,13 @@
   background-position: center;
   background-size: cover;
 }
+.howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container .dragProductBacklog.dragging {
+  outline: solid #0099C0;
+}
+.howToScrum .howToScrum-container .mainAxisList .crossAxisList .crossAxisList-item__container .dragSprintBacklog.dragging {
+  outline: solid #0099C0;
+}
+
 .crossAxisList-item__story {
   display: flex;
   flex-direction: column;
@@ -253,12 +264,11 @@
   cursor: move;
 }
 .crossAxisList-item__story .info-container__story {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   height: auto;
   width: 100%;
+}
+.crossAxisList-item__story .info-container__story h3 {
+  display: inline-block;
 }
 .crossAxisList-item__story .crossAxisList-item__storyChild {
   display: flex;

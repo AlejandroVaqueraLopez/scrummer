@@ -1,5 +1,8 @@
 const {Router} = require('express');
+const pool = require('./database.js');
 const router = Router();
+
+//RENDER SECTION 
 //use res.render to load up an ejs view file
 //index page
 router.get('/',(req,res)=>{
@@ -41,5 +44,9 @@ router.get('/proyectContent',(req,res)=>{
  res.render(__dirname + '/pages/proyectContent.ejs')
 });
 
+//POST SECTION 
+router.post('/signUp',(req,res) => {
+	res.send('received');
+})
 module.exports = router;
 

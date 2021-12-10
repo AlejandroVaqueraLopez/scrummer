@@ -82,13 +82,27 @@
 
 				.crossAxisList{
 					display:inline-block;
-				//	outline:solid yellow;
+					//outline:solid yellow;
 					width:330px;
 					height:99%;
 					box-sizing:border-box;
-					overflow-y:auto;
-					overflow-x:none;
 					white-space:normal;
+
+						h3{
+							text-align:center;
+							height:5%;
+						}
+
+					.crossAxisList-item__container{
+						@include flex(column,flex-start,center);
+						//outline:solid pink;
+						padding-top:10px;
+						box-sizing:border-box;
+						width:100%;
+						white-space:normal;
+						overflow-y:auto;
+						height:95%;
+
 						&::-webkit-scrollbar{
 							width:10px;
 							background:$purplePlattform;
@@ -99,19 +113,6 @@
 							background:$blueBack;
 							border-radius:5px;
 						}
-
-						h3{
-							text-align:center;
-						}
-
-					.crossAxisList-item__container{
-						@include flex(column,flex-start,center);
-						//outline:solid pink;
-						padding-top:10px;
-						box-sizing:border-box;
-						height:auto;
-						width:100%;
-
 						.crossAxisList-item{
 							@include flex(initial,flex-start,center);
 							width:92%;
@@ -159,6 +160,10 @@
 									//outline:solid red;
 									width:100%;
 									margin:5px 0px;
+
+									h3{
+										text-align:start;
+									}
 								}
 							}
 
@@ -178,7 +183,10 @@
 						}
 
 						.dragProductBacklog.dragging{
-						//	outline:solid $blueBack;
+							outline:solid $blueBack;
+						}
+						.dragSprintBacklog.dragging{
+							outline:solid $blueBack;
 						}
 
 					}
@@ -203,9 +211,11 @@
 	cursor:move;
 
 	.info-container__story{
-		@include flex(column,flex-start,flex-start);
 		height:auto;
 		width:100%;
+		h3{
+			display:inline-block;
+		}
 	}
 
 	.crossAxisList-item__storyChild{

@@ -9,14 +9,51 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@500&family=Ubuntu+Condensed&family=Zen+Kaku+Gothic+New:wght@300;500;900&display=swap" rel="stylesheet"> 
+
 	<!--https://fonts.google.com/specimen/Roboto?query=roboto this is the google font page-->
 </head>
 <body>
 	<%- include ('../partials/header.ejs')%> <!--From here we call our header block code-->
 
-	<section class="howToScrum">
-		<div class="howToScrum-container">
-			<h2 class="title">How to SCRUM?</h2>
+	<section class="proyectContent-section">
+
+		<div id="form" class="darkContainer">
+			<div class="changeProfile-container">
+
+				<div class="btnCloseForm-container">
+					<input id="btnCloseForm" class="btnCloseForm btnIcon" type="button">
+				</div>
+
+				<h2 class="title">Change profile</h2>
+
+				<form id="sign-form" class="profile-container__form">
+					<span class="form-image">
+						<img id="profileImage" class="profileImage" src="./icons/profile.png" alt="Profile image">
+						<input id="btnChangeImage" class="btnChangeImage btnIcon paragraph-2" type="button" value="Change image">
+					</span>
+					<span class="form-input">
+						<h3 class="paragraph-2">Name</h3>
+						<input class="txtName paragraph-2" type="input" name="name" required>
+					</span>
+					<span class="form-input">
+						<h3 class="paragraph-2">Email</h3>
+						<input class="txtEmail paragraph-2" name="email"type="email" required>
+					</span>
+					<span class="form-input">
+						<h3 class="paragraph-2 paragraph-2">Password</h3>
+						<input id="password" class="txtPassword" type="password"  name="password" required>
+					</span>
+					
+					<span class="btnSubmit-container">
+						<input id="btnSave" class="btnSuccess btnIcon" value="Save profile" type="submit">
+					</span>
+				</form>
+			</div>
+		</div>
+		<!--here ends the dark container-->
+
+		<div class="proyectContent-container">
+			<h2 class="title">Proyect name</h2>
 			<div class="team-container">
 				<h3 class="paragraph-3">Your team members</h3>
 				<div class="teamMember-container">
@@ -40,69 +77,49 @@
 				<!--product backlog section-->
 				<div class="crossAxisList">
 					<h3 class="paragraph-3"><b class="focus">Product Backlog</b> - Stories</h3>
-					<div class="crossAxisList-item__container productBacklogContainer">
+					<div id="productBacklogId" class="crossAxisList-item__container dragProductBacklogContainer">
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+						<div id="productBacklogId" class="crossAxisList-item dragProductBacklog" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Story name</h3>
 								<p class="paragraph-3">
-									Every <b class="focus">story</b> item can be like this:   (As want to)
+									Every <b class="focus">story</b> item can be like this:   (As a user we want to)
 								</p>
 							</div>
 							<input class="btnEdit btnIcon" type="button">
 						</div>
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+						<div id="productBacklogId" class="crossAxisList-item dragProductBacklog" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Story name</h3>
 								<p class="paragraph-3">
-									Every <b class="focus">story</b> item can be like this:   (As want to)
+									Every <b class="focus">story</b> item can be like this:   (As a user we want to)
 								</p>
 							</div>
 							<input class="btnEdit btnIcon" type="button">
 						</div>
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+						<div id="productBacklogId" class="crossAxisList-item dragProductBacklog" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Story name</h3>
 								<p class="paragraph-3">
-									Every <b class="focus">story</b> item can be like this:   (As want to)
+									Every <b class="focus">story</b> item can be like this:   (As a user we want to)
 								</p>
 							</div>
 							<input class="btnEdit btnIcon" type="button">
 						</div>
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+						<div id="productBacklogId" class="crossAxisList-item dragProductBacklog" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Story name</h3>
 								<p class="paragraph-3">
-									Every <b class="focus">story</b> item can be like this:   (As want to)
+									Every <b class="focus">story</b> item can be like this:   (As a user we want to)
 								</p>
 							</div>
 							<input class="btnEdit btnIcon" type="button">
 						</div>
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
-							<div class="info-container">
-								<h3 class="paragraph-2">Story name</h3>
-								<p class="paragraph-3">
-									Every <b class="focus">story</b> item can be like this:   (As want to)
-								</p>
-							</div>
-							<input class="btnEdit btnIcon" type="button">
-						</div>
-
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
-							<div class="info-container">
-								<h3 class="paragraph-2">Story name</h3>
-								<p class="paragraph-3">
-									Every <b class="focus">story</b> item can be like this:   (As want to)
-								</p>
-							</div>
-							<input class="btnEdit btnIcon" type="button">
-						</div>
-
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+						<div id="productBacklogId" class="crossAxisList-item dragProductBacklog" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Story name</h3>
 								<p class="paragraph-3">
@@ -118,9 +135,9 @@
 				<!--Sprint backlog section-->
 				<div class="crossAxisList">
 					<h3 class="paragraph-3"><b class="focus">Sprint Backlog</b> - To do</h3>
-					<div class="crossAxisList-item__container">
+					<div id="sprintBacklogId" class="crossAxisList-item__container dragSprintBacklogContainer">
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+						<div id="sprintBacklogId" class="crossAxisList-item dragSprintBacklog" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Function name</h3>
 								<p class="paragraph-3">
@@ -142,11 +159,12 @@
 								<div class="dueDate-container">
 									<h3 class="paragraph-3">00:40 25/02/2021</h3>
 								</div>
+
 							</div>
 							<input class="btnEdit btnIcon" type="button">
 						</div>
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+						<div id="sprintBacklogId" class="crossAxisList-item dragSprintBacklog" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Function name</h3>
 								<p class="paragraph-3">
@@ -168,6 +186,34 @@
 								<div class="dueDate-container">
 									<h3 class="paragraph-3">00:40 25/02/2021</h3>
 								</div>
+
+							</div>
+							<input class="btnEdit btnIcon" type="button">
+						</div>
+
+						<div id="sprintBacklogId" class="crossAxisList-item dragSprintBacklog" draggable = "true">
+							<div class="info-container">
+								<h3 class="paragraph-2">Function name</h3>
+								<p class="paragraph-3">
+									Here you describe a <b class="focus">function</b> as a <b class="focus">task</b> to get done a specific <b class="focus">story</b>. You can make <b class="focus">unlimited functions</b> of every <b class="focus">story</b>.
+								</p>
+								<div class="assignedTeamMember-container">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+								</div>
+								<div class="dueDate-container">
+									<h3 class="paragraph-3">00:40 25/02/2021</h3>
+								</div>
+
 							</div>
 							<input class="btnEdit btnIcon" type="button">
 						</div>
@@ -178,9 +224,9 @@
 				<!--here start the sprint back on working section-->
 				<div class="crossAxisList">
 					<h3 class="paragraph-3"><b class="focus">Sprint Backlog</b> - Working</h3>
-					<div class="crossAxisList-item__container">
+					<div id="sprintBacklogId" class="crossAxisList-item__container dragSprintBacklogContainer">
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+						<div id="sprintBacklogId" class="crossAxisList-item dragSprintBacklog" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Function name</h3>
 								<p class="paragraph-3">
@@ -206,7 +252,7 @@
 							<input class="btnEdit btnIcon" type="button">
 						</div>
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+						<div id="sprintBacklogId" class="crossAxisList-item dragSprintBacklog" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Function name</h3>
 								<p class="paragraph-3">
@@ -239,9 +285,9 @@
 				<!--here start the verify section of the sprint backlog-->
 				<div class="crossAxisList">
 					<h3 class="paragraph-3"><b class="focus">Sprint Backlog</b> - To verify</h3>
-					<div class="crossAxisList-item__container">
+					<div id="sprintBacklogId" class="crossAxisList-item__container dragSprintBacklogContainer">
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+						<div id="sprintBacklogId" class="crossAxisList-item dragSprintBacklog" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Function name</h3>
 								<p class="paragraph-3">
@@ -267,8 +313,33 @@
 							<input class="btnEdit btnIcon" type="button">
 						</div>
 
+						<div id="sprintBacklogId" class="crossAxisList-item dragSprintBacklog" draggable = "true">
+							<div class="info-container">
+								<h3 class="paragraph-2">Function name</h3>
+								<p class="paragraph-3">
+									This is a small description of a <b class="focus">function</b> in the product and its <b class="focus">details</b>.
+								</p>
+								<div class="assignedTeamMember-container">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+									<img class="assignedTeamMember-img" src="./icons/profile.png" alt="teamMember">
+								</div>
+								<div class="dueDate-container">
+									<h3 class="paragraph-3">00:40 25/02/2021</h3>
+								</div>
+							</div>
+							<input class="btnEdit btnIcon" type="button">
+						</div>
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+						<div id="sprintBacklogId" class="crossAxisList-item dragSprintBacklog" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Function name</h3>
 								<p class="paragraph-3">
@@ -301,9 +372,9 @@
 
 				<div class="crossAxisList">
 					<h3 class="paragraph-3"><b class="focus">Sprint Backlog</b> - Done</h3>
-					<div class="crossAxisList-item__container">
+					<div id="sprintBacklogId" class="crossAxisList-item__container dragSprintBacklogContainer">
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+						<div id="sprintBacklogId" class="crossAxisList-item dragSprintBacklog" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Function name</h3>
 								<p class="paragraph-3">
@@ -329,7 +400,7 @@
 							<input class="btnEdit btnIcon" type="button">
 						</div>
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+						<div id="sprintBacklogId" class="crossAxisList-item dragSprintBacklog" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Function name</h3>
 								<p class="paragraph-3">
@@ -361,9 +432,9 @@
 				<!--daily scrumm section-->
 				<div class="crossAxisList">
 					<h3 class="paragraph-3"><b class="focus">Daily Scrum</b></h3>
-					<div class="crossAxisList-item__container">
+					<div id="dailyScrumId" class="crossAxisList-item__container dragDailyScrumContainer">
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+						<div id="dailyScrumId" class="crossAxisList-item dragDailyScrum" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Meeting name</h3>
 								<p class="paragraph-3">
@@ -377,7 +448,8 @@
 							<input class="btnEdit btnIcon" type="button">
 						</div>
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+
+						<div id="dailyScrumId" class="crossAxisList-item dragDailyScrum" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Meeting name</h3>
 								<p class="paragraph-3">
@@ -391,7 +463,8 @@
 							<input class="btnEdit btnIcon" type="button">
 						</div>
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+
+						<div id="dailyScrumId" class="crossAxisList-item dragDailyScrum" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Meeting name</h3>
 								<p class="paragraph-3">
@@ -411,16 +484,17 @@
 				<!--sprint review section-->
 				<div class="crossAxisList">
 					<h3 class="paragraph-3"><b class="focus">Sprint Review</b></h3>
-					<div class="crossAxisList-item__container">
+					<div id="sprintReviewId" class="crossAxisList-item__container dragSprintReviewContainer">
 
-						<div class="crossAxisList-item__story">
+						<div id="sprintReviewId" class="crossAxisList-item__story dragSprintReview" draggable="true">
+
 							<div class="info-container__story">
 								<h3 class="paragraph-2">Story name</h3>
 								<p class="paragraph-3">
 									This is a description of a story.
 								</p>
 							</div>
-							<div class="crossAxisList-item__storyChild dragProductBacklog" draggable = "true">
+							<div class="crossAxisList-item__storyChild" draggable = "true">
 								<div class="info-container">
 									<h3 class="paragraph-2">Story name</h3>
 									<p class="paragraph-3">
@@ -433,16 +507,19 @@
 								</div>
 								<input class="btnEdit btnIcon" type="button">
 							</div>
+
 						</div>
 
-						<div class="crossAxisList-item__story">
+
+						<div id="sprintReviewId" class="crossAxisList-item__story dragSprintReview" draggable="true">
+
 							<div class="info-container__story">
 								<h3 class="paragraph-2">Story name</h3>
 								<p class="paragraph-3">
 									This is a description of a story.
 								</p>
 							</div>
-							<div class="crossAxisList-item__storyChild dragProductBacklog" draggable = "true">
+							<div class="crossAxisList-item__storyChild" draggable = "true">
 								<div class="info-container">
 									<h3 class="paragraph-2">Story name</h3>
 									<p class="paragraph-3">
@@ -455,6 +532,32 @@
 								</div>
 								<input class="btnEdit btnIcon" type="button">
 							</div>
+
+						</div>
+
+
+						<div id="sprintReviewId" class="crossAxisList-item__story dragSprintReview" draggable="true">
+
+							<div class="info-container__story">
+								<h3 class="paragraph-2">Story name</h3>
+								<p class="paragraph-3">
+									This is a description of a story.
+								</p>
+							</div>
+							<div class="crossAxisList-item__storyChild" draggable = "true">
+								<div class="info-container">
+									<h3 class="paragraph-2">Story name</h3>
+									<p class="paragraph-3">
+										This is a small description of a <b class="focus">function</b>.
+									</p>
+									<h3 class="paragraph-2">Calification</h3>
+									<p class="paragraph-3">
+										<b class="focus">Done</b>
+									</p>
+								</div>
+								<input class="btnEdit btnIcon" type="button">
+							</div>
+
 						</div>
 
 					</div>
@@ -463,9 +566,9 @@
 				<!--sprint retrospective section-->
 				<div class="crossAxisList">
 					<h3 class="paragraph-3"><b class="focus">Sprint Retrospective</b></h3>
-					<div class="crossAxisList-item__container">
+					<div id="sprintRetrospectiveId" class="crossAxisList-item__container dragSprintRetrospectiveContainer">
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+						<div id="sprintRetrospectiveId" class="crossAxisList-item dragSprintRetrospective" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Meeting name</h3>
 								<p class="paragraph-3">
@@ -479,7 +582,8 @@
 							<input class="btnEdit btnIcon" type="button">
 						</div>
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+
+						<div id="sprintRetrospectiveId" class="crossAxisList-item dragSprintRetrospective" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Meeting name</h3>
 								<p class="paragraph-3">
@@ -493,21 +597,8 @@
 							<input class="btnEdit btnIcon" type="button">
 						</div>
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
-							<div class="info-container">
-								<h3 class="paragraph-2">Meeting name</h3>
-								<p class="paragraph-3">
-									This is a small description of a <b class="focus">meeting</b> main topic to talk about.
-								</p>
-								<h3 class="paragraph-2">Calification</h3>
-								<p class="paragraph-3">
-									<b class="focus">Can be better</b>.
-								</p>
-							</div>
-							<input class="btnEdit btnIcon" type="button">
-						</div>
 
-						<div class="crossAxisList-item dragProductBacklog" draggable = "true">
+						<div id="sprintRetrospectiveId" class="crossAxisList-item dragSprintRetrospective" draggable = "true">
 							<div class="info-container">
 								<h3 class="paragraph-2">Meeting name</h3>
 								<p class="paragraph-3">
@@ -529,6 +620,8 @@
 
 	</section>
 
+
+	
 	<%- include ('../partials/btnAdd.ejs')%> <!--From here we call the add btn code-->
 	<%- include ('../partials/footer.ejs')%> <!--From here we call our footer block code-->
 
@@ -539,5 +632,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 	<script src="./js/androidVKeyboardFix.js"></script>
 	<script src="./js/draggables.js"></script>
+	<script src="./js/formMechanicals.js"></script>
+	<script src="./js/validationSingForm.js"></script>
+
 </body>
 </html>
