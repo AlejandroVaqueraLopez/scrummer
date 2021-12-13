@@ -12,10 +12,8 @@ router.post('/signUp',(req,res) => {
 		password,
 		passwordConfirm
 	};
-
-	console.log(newUser);
 	req.flash('success','new user confirmed');
-	res.redirect(path.join(__dirname,'../pages/proyectPanel.ejs'));
+	res.redirect('/signUp');
 });
 
 module.exports = router;

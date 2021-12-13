@@ -11,12 +11,12 @@ router.get('/',(req,res)=>{
 
 //signUp page
 router.get('/signUp',(req,res)=>{
-	res.render(path.join(__dirname, '../pages/signUp.ejs'));
+	res.render(path.join(__dirname, '../pages/signUp.ejs'),{ message : req.flash('success')});
 });
 
 //proyects page
 router.get('/proyectPanel',(req,res)=>{
-	res.render(path.join(__dirname, '../pages/proyectPanel.ejs'),{ message : req.flash('success')});
+	res.render(path.join(__dirname, '../pages/proyectPanel.ejs'));
 });
 
 //signIn page
