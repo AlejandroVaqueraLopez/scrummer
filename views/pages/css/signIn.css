@@ -98,6 +98,15 @@
   max-width: 400px;
   margin: 100px 0px 40px 0px;
 }
+.signIn .signIn-container .successSignUp {
+  text-align: start;
+  background: #0099C0;
+  width: 100%;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 10px 0px;
+}
 .signIn .signIn-container .signIn-container__form {
   display: flex;
   flex-direction: column;

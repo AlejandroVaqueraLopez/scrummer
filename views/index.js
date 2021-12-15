@@ -3,6 +3,7 @@ import {Server as WebSocketServer} from "socket.io";//socket.io server from the 
 const http = require("http");//import of the http module directly from node
 const flash = require('connect-flash');
 const morgan = require('morgan');
+const passport = require('passport');
 
 const session = require('express-session');
 const mysqlStore = require('express-mysql-session');
@@ -11,11 +12,12 @@ const {database}= require('./keys');
 //IMPORTANT NOTE: IF YOU INSTALL A NODE MODULE, YOU NEED TO IMPORT IT AS TRADITIONAL, 'import ....'
 //BUT IF YOU HAVE ALREADY IT IN NODE JS JUST TYPE 'const --varName-- = require('moduleName')'
 //'
-
+//initializations
 const path = require('path');
 const app = express();//instance of express module
 const server = http.createServer(app); //creating a node-http server and passing the express config in "app"
 const io = new WebSocketServer(server); //creating the socket.io server with the http server with "app" config
+require('./lib/passport');//this one is to use the passport file functions
 
 //set the view ejs engine
 app.set('view engine', 'ejs');
@@ -27,16 +29,18 @@ app.use(session({
 	store:new mysqlStore(database) 
 	
 }))
-app.use(morgan('dev'));
+app.use(morgan('dev'));//still unused
 app.use(flash());
 //to encode the url
-app.use(express.urlencoded({extended:false}));
+app.use(express.urlencoded({extended:false}));//still unused
 //to use json in the future
-app.use(express.json());
+app.use(express.json());//still unused
+app.use(passport.initialize());//initializing passport module
+app.use(passport.session());//creating a session with passport module
 
 //GLOBAL variables
 app.use((req,res,next) => {
-	app.locals.success = req.flash('success');
+	app.locals.successSignUp = req.flash('successSignUp');
 
 	next();
 })

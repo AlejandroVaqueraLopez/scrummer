@@ -21,7 +21,7 @@
 			<form action="/signUp" method="POST" id="sign-form" class="signUp-container__form">
 				<span class="form-input">
 					<h3 class="paragraph-2">Name</h3>
-					<input class="txtName paragraph-2" type="input" name="name" required>
+					<input class="txtName paragraph-2" type="input" name="username" required>
 				</span>
 				<span class="form-input">
 					<h3 class="paragraph-2">Email</h3>
@@ -41,9 +41,6 @@
 				<span class="btnSubmit-container">
 					<input class="btnSuccess btnIcon" value="Sign up" type="submit">
 				</span>
-				<% if(success){%>
-					<p><%= success %></p>
-				<% }%>
 			</form>
 
 		</div>

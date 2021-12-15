@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $("#sign-form").validate({
     rules: {
-      name : {
+      username: {
         required: true,
         minlength: 3,
         maxlength:20 
@@ -21,7 +21,7 @@ $(document).ready(function() {
       }
     },
     messages : {
-      name: {
+      username: {
         required: "Name is required",
         minlength: "Name should be at least 3 characters",
         maxlength: "Name should be max 20 characters"

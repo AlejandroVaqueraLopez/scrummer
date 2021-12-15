@@ -1,19 +1,15 @@
 const {Router} = require('express');
-const pool = require('../database');
 const router = Router();
 const path = require('path');
+const passport = require('passport');
 
 //POST SECTION 
-router.post('/signUp',(req,res) => {
-	const {name,email,password,passwordConfirm} = req.body;
-	const newUser = {
-		name,
-		email,
-		password,
-		passwordConfirm
-	};
-	req.flash('success','new user confirmed');
-	res.redirect('/signUp');
-});
+router.post('/signUp', passport.authenticate('local.signUp',{
+		successRedirect: '/signIn',
+		failureRedirect: '/signUp',
+		successFlash:true,
+		failureFlash: true,
+	})
+);
 
 module.exports = router;

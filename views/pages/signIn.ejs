@@ -16,6 +16,9 @@
 
 	<section class="signIn">
 		<div class="signIn-container">
+			<% if(successSignUp){%>
+				<label class="successSignUp"><%= successSignUp%></label>
+			<% }%>
 			<h2 class="title">Sign In</h2>
 
 			<form id="sign-form" class="signIn-container__form">

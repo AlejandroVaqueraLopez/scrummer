@@ -11,7 +11,7 @@ router.get('/',(req,res)=>{
 
 //signUp page
 router.get('/signUp',(req,res)=>{
-	res.render(path.join(__dirname, '../pages/signUp.ejs'),{ message : req.flash('success')});
+	res.render(path.join(__dirname, '../pages/signUp.ejs'));
 });
 
 //proyects page
@@ -21,7 +21,7 @@ router.get('/proyectPanel',(req,res)=>{
 
 //signIn page
 router.get('/signIn',(req,res)=>{
-	res.render(path.join(__dirname, '../pages/signIn.ejs'));
+	res.render(path.join(__dirname, '../pages/signIn.ejs'),{ message : req.flash('successSignUp')});
 });
 
 //profile page
