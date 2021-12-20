@@ -4,7 +4,6 @@ const http = require("http");//import of the http module directly from node
 const flash = require('connect-flash');
 const morgan = require('morgan');
 const passport = require('passport');
-
 const session = require('express-session');
 const mysqlStore = require('express-mysql-session');
 const {database}= require('./keys');
@@ -64,6 +63,6 @@ io.on('connection',(socket) =>{
 });
 
 //server starter
-server.listen(3000,'192.168.100.242');//the second parameter is a specific ip to prove the app in every device 
+server.listen(3000,'192.168.100.103');//the second parameter is a specific ip to prove the app in every device 
 console.log('server on port',3000);
 	
